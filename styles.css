@@ -1,13 +1,33 @@
-body {
-    background-color: #F3F5C9;
-}
-
 h1 {
     color: blue;
     text-align:center;
 }
 
 body{
+    background-color: #F3F5C9;
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
+    text-align: center;
+}
+
+#bodyparagraph{
+    color: red;
+    margin: auto;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    display: inline;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li:hover{
+    background: yellow;
 }
