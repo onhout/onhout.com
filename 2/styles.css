@@ -11,20 +11,23 @@ body{
 
 body.secondpage{
     text-align: center;
+    max-width: 980px;
+    margin:auto;
 }
 
 #imgwrapper{
     width:600px;
     margin: auto;
-    float: right
+    float: right;
 }
 
 img{
     float: right;
+    margin:0 20px 0 0;
 }
 
 #inputs{
-    width: 480px;
+    width: 380px;
     margin: auto;
     overflow: hidden;
 }

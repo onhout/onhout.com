@@ -4,9 +4,25 @@ $(document).ready(function(){
     bedcolor();
 });
 
+$(function() {
+        changeScreen($(this).width());
+        $(window).resize(function() {
+            changeScreen($(this).width());
+        });
+});
+
+function changeScreen(screenwidth) {
+        width = parseInt(screenwidth);
+        if (width < 980 && width > 600) {
+            $("body.secondpage").css("max-width", "600px");
+            $("img").css("width","100%");
+        } else {
+            $("body.secondpage").css("max-width", "980px"); 
+        }
+}
 
 function bedcolor(){
-    $("#bed").click(function(){
+    $("#imgwrapper").click(function(){
         var randomnumber = Math.floor((Math.random() * 360) + 1);
         $("#bed").css("-webkit-filter", "hue-rotate(" + randomnumber + "deg)");
         $("#bottomcomment").text("Hue: " + randomnumber + " degrees.");
@@ -16,6 +32,8 @@ function bedcolor(){
 function reset(){
     filter_value = {};
     colorchange();
+    $("input").val(0);
+    $("span").text(0);
 }
 
 function change(thething, num){
