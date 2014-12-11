@@ -16,7 +16,9 @@ function changeScreen(screenwidth) {
         if (width < 980 && width > 600) {
             $("body.secondpage").css("max-width", "600px");
             $("img").css("width","100%");
-        } else {
+        } else if (width < 600){
+            $("img").css("float","center");
+        }else {
             $("body.secondpage").css("max-width", "980px"); 
         }
 }
@@ -34,6 +36,7 @@ function reset(){
     colorchange();
     $("input").val(0);
     $("span").text(0);
+    $("#bottomcomment").text("Reset.")
 }
 
 function change(thething, num){

@@ -16,14 +16,9 @@ body.secondpage{
 }
 
 #imgwrapper{
-    width:600px;
+    max-width:600px;
     margin: auto;
     float: right;
-}
-
-img{
-    float: right;
-    margin:0 20px 0 0;
 }
 
 #inputs{
@@ -52,6 +47,4 @@ li{
     margin: 0 0 7px 0
 }
 
-#bottomcomment{
-    position: relative;
-}
+
