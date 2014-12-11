@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    text-align:center;
+}
+
+body{
+    background-color: #F3F5C9;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+}
+
+body.secondpage{
+    text-align:center;
+}

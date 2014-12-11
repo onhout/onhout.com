@@ -7,13 +7,16 @@ body{
     background-color: #F3F5C9;
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
-    text-align: center;
+}
+
+body.firstpage{
+    text-align:center;
 }
 
 #bodyparagraph{
     color: red;
     margin: auto;
-    text-align: left;
+    text-align: center;
 }
 
 ul{
