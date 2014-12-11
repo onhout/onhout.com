@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+    text-align:center;
+}
+
+body{
+    background-color: #F3F5C9;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+}
+
+body.thirdpage{
+    text-align: center;
+    max-width: 980px;
+    margin:auto;
+}
