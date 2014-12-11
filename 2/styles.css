@@ -10,5 +10,45 @@ body{
 }
 
 body.secondpage{
-    text-align:center;
+    text-align: center;
+}
+
+#imgwrapper{
+    width:600px;
+    margin: auto;
+    float: right
+}
+
+img{
+    float: right;
+}
+
+#inputs{
+    width: 480px;
+    margin: auto;
+    overflow: hidden;
+}
+
+input{
+    width: 240px;
+}
+
+#sliderss{
+    width: 240px;
+    float:left;
+}
+
+#lists{
+    text-align: left;
+    list-style: none;
+    margin:auto;
+    float: left;
+}
+
+li{
+    margin: 0 0 7px 0
+}
+
+#bottomcomment{
+    position: relative;
 }
