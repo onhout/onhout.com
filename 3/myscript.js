@@ -1,4 +1,5 @@
 $(document).ready(function(){
+<<<<<<< HEAD
     var list=["braeburn", "cortland", "empire", "fuji", "gala", "gingergold", "goldendelicious", "grannysmith", "honeycrisp", "idared", "jonagold", "jonathan", "mcintosh", "reddelicious", "rome"];
     var wikilist=["Braeburn", "Cortland_apple", "Empire_apple", "Fuji_apple", "Gala_apple", "Ginger_Gold", "Golden_Delicious", "Granny_Smith", "Honeycrisp", "Idared", "Jonagold", "Jonathan_apple", "McIntosh_apple", "Red_Delicious", "Rome_apple"];
     for (i=list.length; i--;){
@@ -37,3 +38,23 @@ $(document).ready(function(){
     });*/
     
 });
+=======
+    $("#test").click(function(event){
+        event.preventDefault();
+        $.getJSON("dictionary.json", function(data){
+            var html='';
+            $.each(data, function(entryIndex, entry){
+                html += '<div class"entry">';
+                html += '<h2 class="key">' + entry.key + '</h2>';
+                if (entry.key2){
+                    $.each(entry.key2, function(arrayIndex, line){
+                        html += '<h3 class="key2">' + line + '</h3>';
+                    });
+                }
+                html += '</div>';
+            });
+            $("#what").html(html);
+        });
+    });
+});
+>>>>>>> origin/master
