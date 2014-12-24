@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Let's do something else</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="myscript.js"></script>
+</head>
+
+<body class="secondpage">
+    <h1>Best bed?</h1>
+    <p>A little something using css3 and jquery.
+        <br>Click the bed to change to a random hue or use the slider to set properties you want.</p>
+    <div id="imgwrapper">
+        <img src="../images/bed.png" id="bed"></img>
+        <p id="bottomcomment"></p>
+    </div>
+    <div id="inputs">
+        <div id="sliderss">
+            <input type="range" id="hueinput" min="0" max="360" step="0.1" defaultValue="0" value="0" oninput="change('hue-rotate',this.value +'deg')"></input>
+            <input type="range" id="blurinput" min="0" max="10" step="0.1" defaultValue="0" value="0" oninput="change('blur', this.value+'px')"></input>
+            <input type="range" id="grayscaleinput" min="0" max="1" step="0.1" defaultValue="0" value="0" oninput="change('grayscale', this.value)"></input>
+            <input type="range" id="sepiainput" min="0" max="1" step="0.1" defaultValue="0" value="0" oninput="change('sepia', this.value)"></input>
+            <input type="range" id="brightnessinput" min="0" max="10" step="0.1" defaultValue="0" value="0" oninput="change('brightness', this.value)"></input>
+            <input type="range" id="contrastinput" min="0" max="10" step="0.1" defaultValue="0" value="0" oninput="change('contrast', this.value)"></input>
+            <input type="range" id="invertinput" min="0" max="1" step="0.1" defaultValue="0" value="0" oninput="change('invert', this.value)"></input>
+            <input type="range" id="saturateinput" min="0" max="10" step="0.1" defaultValue="0" value="0" oninput="change('saturate', this.value)"></input>
+            <input type="range" id="opacityinput" min="0" max="1" step="0.1" defaultValue="0" value="0" oninput="change('opacity', this.value)"></input>
+        </div>
+        <ul id="lists">
+            <li>Hue:<span id="hue-rotate">0</span>
+            </li>
+            <li>Blur:<span id="blur">0</span>
+            </li>
+            <li>Grayscale:<span id="grayscale">0</span>
+            </li>
+            <li>Sepia:<span id="sepia">0</span>
+            </li>
+            <li>Brightness:<span id="brightness">0</span>
+            </li>
+            <li>Contrast:<span id="contrast">0</span>
+            </li>
+            <li>Invert:<span id="invert">0</span>
+            </li>
+            <li>Saturate:<span id="saturate">0</span>
+            </li>
+            <li>Opacity:<span id="opacity">0</span>
+            </li>
+        </ul>
+    </div>
+    <button onclick="reset()">Reset</button>
+    <a href="../3/3.html">Next Page</a>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+h1 {
+    color: blue;
+    text-align:center;
+}
+
+body{
+    background-color: #F3F5C9;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+}
+
+body.secondpage{
+    text-align: center;
+    max-width: 980px;
+    margin:auto;
+}
+
+#imgwrapper{
+    max-width:600px;
+    margin: auto;
+    float: right;
+}
+
+#inputs{
+    width: 380px;
+    margin: auto;
+    overflow: hidden;
+}
+
+input{
+    width: 240px;
+}
+
+#sliderss{
+    width: 240px;
+    float:left;
+}
+
+#lists{
+    text-align: left;
+    list-style: none;
+    margin:auto;
+    float: left;
+}
+
+li{
+    margin: 0 0 7px 0
+}
+
+
