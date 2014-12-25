@@ -9,14 +9,25 @@
 </head>
 
 <body ng-app>
-    <div class="container-fluid">
-        <div ng-controller="hello">
-            say hello to:
-            <input type="text" class="form-control" ng-model="name">
-            <br>
-            <hi>Hello, {{getName()}}!</hi>
+<div class="container-fluid">
+    <div ng-controller="hello">
+        <div class="row">
+            <div class="col-md-4">
+                <label for ="hello">Say hello to:</label>
+                <input type="text" id="hello" class="form-control" ng-model="name">
+            </div>
+            <div class="col-md-6"><h1>Hello, {{getName()}}!</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h1>This is another test for bootstrap CSS</h1>
+            </div>
+            <div class="col-md-6">
+                <h3>Column 4</h3>
+            </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
