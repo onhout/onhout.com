@@ -10,21 +10,20 @@
 
 <body ng-app>
 <div class="container-fluid">
-    <div ng-controller="hello">
+    <div ng-controller="HelloController">
         <div class="row">
-            <div class="col-md-4">
-                <label for ="hello">Say hello to:</label>
-                <input type="text" id="hello" class="form-control" ng-model="name">
+            <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="hello">Type your message:</label>
+                        <textarea id="hello" class="form-control" ng-model="name" placeholder="Type your text here"></textarea>
+                        <span>Remaining: {{remaining()}}</span>
+                    </div>
+                    <div class="form-group" ng-controller="ButtonController">
+                        <button type="submit" class="btn btn-primary" ng-click="send()">Send</button>
+                        <button class="btn btn-default" ng-click="clear()">Clear</button>
+                    </div>
             </div>
-            <div class="col-md-6"><h1>Hello, {{getName()}}!</h1></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h1>This is another test for bootstrap CSS</h1>
-            </div>
-            <div class="col-md-6">
-                <h3>Column 4</h3>
-            </div>
+            <div class="col-md-5"><h1>Hello, {{getName()}}!</h1></div>
         </div>
     </div>
 </div>
