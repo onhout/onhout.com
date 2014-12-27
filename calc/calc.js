@@ -20,19 +20,27 @@ calc.service('Math', function(){
 
 calc.controller('calculator', function($scope, Math){
     $scope.Xaddition = function(){
-        $scope.answer = Math.addition($scope.anumber, $scope.bnumber);
+        $scope.answer = function(){
+            return Math.addition($scope.anumber, $scope.bnumber);
+        }
         $scope.operator = 'Addition';
     }
     $scope.Xsubtraction = function(){
-        $scope.answer = Math.subtraction($scope.anumber, $scope.bnumber);
+        $scope.answer = function(){
+            return Math.subtraction($scope.anumber, $scope.bnumber);
+        }
         $scope.operator = 'Subtraction';
     }
     $scope.Xmultiplication = function(){
-        $scope.answer = Math.multiplication($scope.anumber, $scope.bnumber);
+        $scope.answer = function(){
+            return Math.multiplication($scope.anumber, $scope.bnumber);
+        }
         $scope.operator = 'Multiplication';
     }
     $scope.Xdivision = function(){
-        $scope.answer = Math.division($scope.anumber, $scope.bnumber);
+        $scope.answer = function(){
+            return Math.division($scope.anumber, $scope.bnumber);
+        }
         $scope.operator = 'Division';
     }
 });
