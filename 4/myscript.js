@@ -1,9 +1,10 @@
 var MAX_LEN = 200;
 
-angular.module('hello', []).controller('HelloController', function($scope){
-    $scope.name = "world";
+angular.module('hello', [])
+    .controller('HelloController', function($scope){
+    $scope.name = "";
     $scope.getName = function () {
-        return $scope.name;
+        return ("Hello, ")+$scope.name;
     };
     $scope.remaining = function () {
         return MAX_LEN - $scope.name.length;
@@ -19,6 +20,7 @@ var ButtonController = function($scope){
         alert("Your name is: "+$scope.name);
     };
 
-    $scope.clear = function(){
-    };
+    $scope.clear = function() {
+        $scope.name = "";
+    }
 };

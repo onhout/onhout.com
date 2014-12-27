@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="calc.js"></script>
+</head>
+<body>
+<div class="container" ng-app="calc">
+    <div ng-controller="calculator">
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label>Simple Calculator</label>
+                <input type="number" class="form-control" ng-model="anumber"/>
+                <input type="number" class="form-control" ng-model="bnumber"/>
+                <div>You are doing: {{operator}}</div>
+                <button class="btn" ng-click="Xaddition()">+</button>
+                <button class="btn" ng-click="Xsubtraction()">-</button>
+                <button class="btn" ng-click="Xmultiplication()">X</button>
+                <button class="btn" ng-click="Xdivision()">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>Answer is: {{answer}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
