@@ -14,7 +14,7 @@ calc.service('Math', function(){
         return a * b;
     };
     this.division = function(a, b){
-        return a / b;
+        return (a / b).toFixed(2);
     };
 });
 
