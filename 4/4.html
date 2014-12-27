@@ -8,11 +8,11 @@
     <script type="text/javascript" src="myscript.js"></script>
 </head>
 
-<body ng-app>
+<body ng-app='hello'>
 <div class="container-fluid">
     <div ng-controller="HelloController">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-sm-5">
                     <div class="form-group">
                         <label for="hello">Type your message:</label>
                         <textarea id="hello" class="form-control" ng-model="name" placeholder="Type your text here"></textarea>
@@ -23,8 +23,8 @@
                         <button class="btn btn-default" ng-click="clear()">Clear</button>
                     </div>
             </div>
-            <div class="col-md-5"><h1>Hello, {{getName()}}!</h1></div>
         </div>
+        <div class="col-md-5"><h1>Hello, {{getName()}}!</h1></div>
     </div>
 </div>
 </body>
