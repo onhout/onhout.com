@@ -20,7 +20,8 @@ var ButtonController = function($scope){
         alert("Your name is: "+$scope.name);
     };
 
-    $scope.clear = function() {
+    $scope.clear = function($scope) {
+        $scope.thisform.$setPristine();
         $scope.name = "";
-    }
+    };
 };

@@ -18,29 +18,29 @@ calc.service('Math', function(){
     };
 });
 
-calc.controller('calculator', function($scope, Math){
-    $scope.Xaddition = function(){
-        $scope.answer = function(){
-            return Math.addition($scope.anumber, $scope.bnumber);
-        }
-        $scope.operator = 'Addition';
-    }
-    $scope.Xsubtraction = function(){
-        $scope.answer = function(){
-            return Math.subtraction($scope.anumber, $scope.bnumber);
-        }
-        $scope.operator = 'Subtraction';
-    }
-    $scope.Xmultiplication = function(){
-        $scope.answer = function(){
-            return Math.multiplication($scope.anumber, $scope.bnumber);
-        }
-        $scope.operator = 'Multiplication';
-    }
-    $scope.Xdivision = function(){
-        $scope.answer = function(){
-            return Math.division($scope.anumber, $scope.bnumber);
-        }
-        $scope.operator = 'Division';
-    }
-});
+calc.controller('calculator', ['$scope', 'Math', function(p1, p2){
+    p1.Xaddition = function(){
+        p1.answer = function(){
+            return p2.addition(p1.anumber, p1.bnumber);
+        };
+        p1.operator = 'Addition';
+    };
+    p1.Xsubtraction = function(){
+        p1.answer = function(){
+            return p2.subtraction(p1.anumber, p1.bnumber);
+        };
+        p1.operator = 'Subtraction';
+    };
+    p1.Xmultiplication = function(){
+        p1.answer = function(){
+            return p2.multiplication(p1.anumber, p1.bnumber);
+        };
+        p1.operator = 'Multiplication';
+    };
+    p1.Xdivision = function(){
+        p1.answer = function(){
+            return p2.division(p1.anumber, p1.bnumber);
+        };
+        p1.operator = 'Division';
+    };
+}]);
