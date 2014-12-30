@@ -66,6 +66,14 @@
         </div>
     </div>
 </nav>
+<div ng-controller="AlertDemoController">
+    <div class="alertcontainer">
+    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" class="thealerts">
+        {{alert.msg}}
+    </alert>
+    </div>
+    <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
+</div>
 
 <div ng-controller="NavbarController">
     <button class="btn btn-primary" ng-click="clicked('homeaction')">Home</button>
@@ -74,13 +82,6 @@
     <br>
 
     <h1>{{message}}</h1>
-</div>
-
-<div ng-controller="AlertDemoController">
-    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" class="thealerts">
-        {{alert.msg}}
-    </alert>
-    <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
 </div>
 
 </body>
