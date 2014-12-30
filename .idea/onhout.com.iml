@@ -9,5 +9,10 @@
     <orderEntry type="library" name="angular" level="application" />
     <orderEntry type="library" name="angularjs-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="angular" level="application" />
+    <orderEntry type="library" name="ui-bootstrap" level="application" />
+    <orderEntry type="library" name="ui-bootstrap-tpls" level="application" />
+    <orderEntry type="library" name="ui-bootstrap-tpls-0.12.0" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="angular-animate" level="application" />
   </component>
 </module>
