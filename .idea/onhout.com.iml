@@ -14,5 +14,6 @@
     <orderEntry type="library" name="ui-bootstrap-tpls-0.12.0" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="angular-animate" level="application" />
+    <orderEntry type="library" name="angular-route" level="application" />
   </component>
 </module>

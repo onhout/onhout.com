@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="home.js"></script>
+    <title></title>
+</head>
+<body ng-app="homePage">
+<div ng-controller="homePageController">
+    <button class="btn btn-primary" ng-click="clicked('homeaction')">Home</button>
+    <button class="btn btn-primary" ng-click="clicked('orderaction')">Orders</button>
+    <button class="btn btn-primary" ng-click="clicked('reportaction')">Reports</button>
+    <br>
+    <h1>{{message}}</h1>
+</div>
+</body>
+</html>
