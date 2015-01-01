@@ -28,12 +28,12 @@ navbar.config(function($routeProvider){
     $routeProvider
         .when('/', {
             templateUrl:'pgs/home.html',
-            controller:'homePageController'
+            controller: 'homePageController'
         });
 });
 
 navbar.controller('homePageController', function($scope){
-    $scope.message = 'I AM A FUCKING GENIUS';
+    $scope.message = 'HELLO, WORLD!'; //yeah I know...
 });
 
 /*navbar.value('menusItem', {
