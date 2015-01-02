@@ -3,25 +3,22 @@
  */
 var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute']);
 
-navbar.controller('NavbarController', ['$scope', function(scope){
-   /* scope.clicked = function(thevalue){
+navbar.controller('NavbarController', function($scope, $timeout){
+    /*scope.clicked = function(thevalue){
         return scope.message = functionzz.selectfunction(thevalue);
     };*/
 
-    scope.alerts = [
-        { type: 'danger', msg: 'Just testing out a few things here.' },
-        { type: 'success', msg: 'Alerts with fading capability seems working fine.' }
-    ];
+    $scope.alerts = [];
 
-    scope.addAlert = function() {
-        scope.alerts.push({msg: 'Just another alert!'});
-        //$timeout(function(){scope.closeAlert();},3000);
+    $scope.addAlert = function() {
+        $scope.alerts.push({type: 'danger', msg: 'Dangerous Alert!'}); //type: success(green) or none(yellow)
+        $timeout(function(){$scope.closeAlert();},3000);
     };
 
-    scope.closeAlert = function(index) {
-        scope.alerts.splice(index, 1);
+    $scope.closeAlert = function(index) {
+        $scope.alerts.splice(index, 1);
     };
-}]);
+});
 //configure routes
 
 navbar.config(function($routeProvider){
@@ -29,11 +26,19 @@ navbar.config(function($routeProvider){
         .when('/', {
             templateUrl:'pgs/home.html',
             controller: 'homePageController'
+        })
+        .when('/orders', {
+            templateUrl: 'pgs/orders.html',
+            controller: 'ordersController'
         });
 });
 
 navbar.controller('homePageController', function($scope){
-    $scope.message = 'HELLO, WORLD!'; //yeah I know...
+    $scope.message = 'Home';
+});
+
+navbar.controller('ordersController', function($scope){
+    $scope.message = 'Orders';
 });
 
 /*navbar.value('menusItem', {
