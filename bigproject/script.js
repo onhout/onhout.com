@@ -1,7 +1,7 @@
 /**
  * Created by pl on 12/29/2014.
  */
-var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute']);
+var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute', 'home']);
 
 navbar.controller('NavbarController', function($scope, $timeout, $modal){
     /*scope.clicked = function(thevalue){
@@ -57,8 +57,7 @@ navbar.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) 
 });
 //configure routes
 
-navbar.config(function($routeProvider, $controllerProvider){
-    navbar.registerCtrl = $controllerProvider.register;
+navbar.config(function($routeProvider){
     $routeProvider
         .when('/', {
             templateUrl:'pgs/home.html'
