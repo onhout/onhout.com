@@ -3,7 +3,7 @@
  */
 var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute']);
 
-navbar.controller('NavbarController', function($scope, $timeout){
+navbar.controller('NavbarController', function($scope, $timeout, $modal){
     /*scope.clicked = function(thevalue){
         return scope.message = functionzz.selectfunction(thevalue);
     };*/
@@ -18,6 +18,42 @@ navbar.controller('NavbarController', function($scope, $timeout){
     $scope.closeAlert = function(index) {
         $scope.alerts.splice(index, 1);
     };
+//signin
+    $scope.items = ['1', '2', '3'];
+
+    $scope.open = function () {
+
+        var modalInstance = $modal.open({
+            templateUrl: 'myModalContent.html',
+            controller: 'ModalInstanceCtrl',
+            windowTemplateUrl: 'pgs/login.html',
+            resolve: {
+                items: function () {
+                    return $scope.items;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (selectedItem) {
+            $scope.selected = selectedItem;
+        }, function () {
+            console.log('Modal dismissed at: ' + $scope.selected);
+        });
+    };
+});
+navbar.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+
+    $scope.items = items;
+    $scope.selected = $scope.items[1];
+    console.log($scope.selected);
+
+    $scope.ok = function () {
+        $modalInstance.close($scope.selected);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
 });
 //configure routes
 
@@ -31,6 +67,10 @@ navbar.config(function($routeProvider){
             templateUrl: 'pgs/orders.html',
             controller: 'ordersController'
         });
+        //.when('/signin', {
+        //    templateUrl: 'pgs/login.html',
+        //    controller: 'popUpController'
+        //});
 });
 
 navbar.controller('homePageController', function($scope){
@@ -68,3 +108,12 @@ navbar.animation('.thealerts',function(){
         }
     };
 });
+
+//navbar.controller('NavBarController', function ($scope, $modal) {
+
+
+//});
+
+// Please note that $modalInstance represents a modal window (instance) dependency.
+// It is not the same as the $modal service used above.
+

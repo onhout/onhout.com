@@ -1,0 +1,17 @@
+<div class="modal fade" ng-class="{in: animate}" ng-style="{'z-index': 1050 + index*10, display: 'block'}" ng-click="close($event)">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close($event)">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <h4 class="modal-title">Missing title?: {{items}} or {{selected}}</h4>
+            </div>
+            <div class="modal-body">
+                Sign in here but...
+            </div>
+            <div class="modal-footer" ng-transclude>
+            </div>
+        </div>
+    </div>
+</div>

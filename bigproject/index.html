@@ -56,7 +56,7 @@
                         <a href="#" class="dropdown-toggle" dropdown-toggle><span class="glyphicon glyphicon-user"></span>
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings</a></li>
+                            <li><a ng-click="open()">Log in</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li><a ng-click="addAlert()">Add Test Alert</a>
@@ -72,7 +72,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-9" ng-view>
-
             </div>
             <div class="col-sm-3">
                 <div class="alertcontainer">
@@ -83,6 +82,17 @@
                 </div>
             </div>
         </div>
+        <script type="text/ng-template" id="myModalContent.html">
+            <button type="button" class="btn btn-primary" ng-click="ok()">OK</button>
+            <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+        </script>
+    </div>
+    <!--modal-->
+    <div>
+        <button class="btn btn-default" ng-click="open()">Open me!</button>
+        <button class="btn btn-default" ng-click="open('lg')">Large modal</button>
+        <button class="btn btn-default" ng-click="open('sm')">Small modal</button>
+        <div>Selection from a modal: {{ items }}</div>
     </div>
 
 </div>
