@@ -24,9 +24,9 @@ navbar.controller('NavbarController', function($scope, $timeout, $modal){
     $scope.open = function () {
 
         var modalInstance = $modal.open({
-            templateUrl: 'myModalContent.html',
+            templateUrl: 'pgs/login.html',
             controller: 'ModalInstanceCtrl',
-            windowTemplateUrl: 'pgs/login.html',
+            backdrop: true,
             resolve: {
                 items: function () {
                     return $scope.items;
@@ -57,15 +57,17 @@ navbar.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) 
 });
 //configure routes
 
-navbar.config(function($routeProvider){
+navbar.config(function($routeProvider, $controllerProvider){
+    navbar.registerCtrl = $controllerProvider.register;
     $routeProvider
         .when('/', {
-            templateUrl:'pgs/home.html',
-            controller: 'homePageController'
+            templateUrl:'pgs/home.html'
         })
         .when('/orders', {
-            templateUrl: 'pgs/orders.html',
-            controller: 'ordersController'
+            templateUrl: 'pgs/orders.html'
+        })
+        .otherwise({
+            redirectedTo: '/'
         });
         //.when('/signin', {
         //    templateUrl: 'pgs/login.html',
@@ -73,9 +75,9 @@ navbar.config(function($routeProvider){
         //});
 });
 
-navbar.controller('homePageController', function($scope){
+/*navbar.controller('homePageController', function($scope){
     $scope.message = 'Home';
-});
+});*/
 
 navbar.controller('ordersController', function($scope){
     $scope.message = 'Orders';

@@ -1,17 +1,48 @@
-<div class="modal fade" ng-class="{in: animate}" ng-style="{'z-index': 1050 + index*10, display: 'block'}" ng-click="close($event)">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" ng-click="close($event)">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
-                <h4 class="modal-title">Missing title?: {{items}} or {{selected}}</h4>
-            </div>
-            <div class="modal-body">
-                Sign in here but...
-            </div>
-            <div class="modal-footer" ng-transclude>
+<div class="modal-header">
+    <button type="button" class="close" ng-click="cancel()">
+        <span class="glyphicon glyphicon-remove"></span>
+    </button>
+    <h4 class="modal-title" ng-hide="checked">Log in</h4>
+    <h4 class="modal-title" ng-show="checked">Register</h4>
+</div>
+<div class="modal-body">
+    <form ng-hide="checked">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="user" class="form-control" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">Remember me
+                </label>
             </div>
         </div>
-    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <form ng-show="checked">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="user" class="form-control" placeholder="Enter your desired username">
+            <span>//your username has been taken</span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="Enter your password">
+            <span>//clean password</span>
+        </div>
+        <div class="form-group">
+            <label for="confirmpassword">Confirm your password</label>
+            <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<div class="modal-footer">
+    <input type="checkbox" ng-model="checked"> Don't have an account?
+    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
 </div>
