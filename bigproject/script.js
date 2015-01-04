@@ -1,13 +1,12 @@
 /**
  * Created by pl on 12/29/2014.
  */
-var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute', 'home']);
+var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute', 'home', 'usersApp']);
 
 navbar.controller('NavbarController', function($scope, $timeout, $modal){
     /*scope.clicked = function(thevalue){
         return scope.message = functionzz.selectfunction(thevalue);
     };*/
-
     $scope.alerts = [];
 
     $scope.addAlert = function() {
@@ -18,37 +17,32 @@ navbar.controller('NavbarController', function($scope, $timeout, $modal){
     $scope.closeAlert = function(index) {
         $scope.alerts.splice(index, 1);
     };
-//signin
-    $scope.items = ['1', '2', '3'];
-
+//signin modal
     $scope.open = function () {
 
         var modalInstance = $modal.open({
             templateUrl: 'pgs/login.html',
             controller: 'ModalInstanceCtrl',
-            backdrop: true,
+            backdrop: true/*,
             resolve: {
                 items: function () {
                     return $scope.items;
                 }
-            }
+            }*/
         });
 
         modalInstance.result.then(function (selectedItem) {
             $scope.selected = selectedItem;
+            console.log('selected: '+$scope.selected+' selectedItem: '+selectedItem);
         }, function () {
             console.log('Modal dismissed at: ' + $scope.selected);
         });
     };
 });
-navbar.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+navbar.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
-    $scope.items = items;
-    $scope.selected = $scope.items[1];
-    console.log($scope.selected);
-
-    $scope.ok = function () {
-        $modalInstance.close($scope.selected);
+    $scope.ok = function (dataObject) {
+        $modalInstance.close(dataObject);
     };
 
     $scope.cancel = function () {
