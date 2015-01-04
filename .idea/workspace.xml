@@ -4,20 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff22f910-d172-4273-8749-677e029c4bda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigproject/data/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigproject/data/db_data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigproject/data/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigproject/data/newtest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigproject/data/register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigproject/controllers/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigproject/pgs/home.html" afterPath="$PROJECT_DIR$/bigproject/pgs/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigproject/index.html" afterPath="$PROJECT_DIR$/bigproject/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigproject/pgs/login.html" afterPath="$PROJECT_DIR$/bigproject/pgs/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigproject/script.js" afterPath="$PROJECT_DIR$/bigproject/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Documents\onhout.com\bigproject\pgs\homeController.js" afterPath="$PROJECT_DIR$/bigproject/controllers/homeController.js" />
-    </list>
+    <list default="true" id="ff22f910-d172-4273-8749-677e029c4bda" name="Default" comment="" />
     <ignored path="onhout.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,12 +135,12 @@
         <option value="$PROJECT_DIR$/bigproject/data/config.php" />
         <option value="$PROJECT_DIR$/bigproject/data/newtest.php" />
         <option value="$PROJECT_DIR$/bigproject/pgs/login.html" />
-        <option value="$PROJECT_DIR$/bigproject/data/db_data.php" />
         <option value="$PROJECT_DIR$/bigproject/data/login.php" />
         <option value="$PROJECT_DIR$/bigproject/controllers/homeController.js" />
         <option value="$PROJECT_DIR$/bigproject/controllers/user.js" />
         <option value="$PROJECT_DIR$/bigproject/pgs/home.html" />
         <option value="$PROJECT_DIR$/bigproject/script.js" />
+        <option value="$PROJECT_DIR$/bigproject/data/db_data.php" />
       </list>
     </option>
   </component>
