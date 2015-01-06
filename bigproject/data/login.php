@@ -4,7 +4,7 @@ $postdata = file_get_contents("php://input");
 $request =json_decode($postdata);
 @$userName = $request->userName;
 @$password = $request->password;
-fetchUserDetails($userName);
+fetchUserDetails($userName, $password);
 /* $loggedInUser = new loggedInUser();
 $loggedInUser->user_id = $userdetails["id"];
 $loggedInUser->userName = $userdetails["userName"];

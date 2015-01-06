@@ -8,6 +8,7 @@
     </div>
     <div class="modal-body">
         <form ng-hide="checked">
+            <div style="color:red">{{errorMessage}}</div>
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="user" class="form-control" ng-model="userName" id="username" placeholder="Enter your username">
@@ -28,17 +29,25 @@
         <form ng-show="checked">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="user" class="form-control" placeholder="Enter your desired username">
-                <span>//your username has been taken</span>
+                <input type="user" class="form-control" ng-model="userName" placeholder="Enter your desired username">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Enter your password">
-                <span>//clean password</span>
+                <input type="password" class="form-control" ng-model="password" placeholder="Enter your password">
             </div>
             <div class="form-group">
                 <label for="confirmpassword">Confirm your password</label>
-                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm password">
+                <input type="password" class="form-control" ng-model="confirmpass" id="confirmpassword" placeholder="Confirm password">
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" ng-model="first_name" id="firstname" placeholder="First name">
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" ng-model="last_name" id="lastname" placeholder="Last name">
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

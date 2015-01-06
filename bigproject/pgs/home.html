@@ -1,4 +1,32 @@
 <div ng-app="home" ng-controller="homePageController">
     <h1>{{message}}</h1>
-    <h1>{{selected.first_name}}</h1>
+    <div>try logging in with onhout && pw:coca</div>
+    <div>
+        <table>
+            <tr>
+                <td>Username: </td>
+                <td>{{sqlObject.user_name}}</td>
+            </tr>
+            <tr>
+                <td>First name: </td>
+                <td>{{sqlObject.first_name}}</td>
+            </tr>
+            <tr>
+                <td>Last name: </td>
+                <td>{{sqlObject.last_name}}</td>
+            </tr>
+            <tr>
+                <td>Business name: </td>
+                <td>{{sqlObject.business_name}}</td>
+            </tr>
+            <tr>
+                <td>Business phone: </td>
+                <td>{{sqlObject.business_phone}}</td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td>{{sqlObject.email}}</td>
+            </tr>
+        </table>
+    </div>
 </div>

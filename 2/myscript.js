@@ -12,7 +12,7 @@ $(function () {
 });
 
 function changeScreen(screenwidth) {
-    width = parseInt(screenwidth);
+    var width = parseInt(screenwidth);
     if (width < 980 && width > 600) {
         $("body.secondpage").css("max-width", "600px");
         $("img").css("width", "100%");

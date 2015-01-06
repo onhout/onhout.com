@@ -9,8 +9,8 @@ navbar.controller('NavbarController', function($scope, $timeout, $modal){
     };*/
     $scope.alerts = [];
 
-    $scope.addAlert = function() {
-        $scope.alerts.push({type: 'danger', msg: 'Dangerous Alert!'}); //type: success(green) or none(yellow)
+    $scope.addAlert = function(type, msg) {
+        $scope.alerts.push({type: type, msg: msg}); //type: success(green) or none(yellow)
         $timeout(function(){$scope.closeAlert();},3000);
     };
 
@@ -31,9 +31,12 @@ navbar.controller('NavbarController', function($scope, $timeout, $modal){
             }*/
         });
 
-        modalInstance.result.then(function (selectedItem) {
-            $scope.selected = selectedItem;
-            console.log('selected: '+$scope.selected+' selectedItem: '+selectedItem);
+        modalInstance.result.then(function (dataObject) {
+            if (dataObject){
+                $scope.addAlert('success', 'Welcome, '+dataObject.first_name);
+            }
+            $scope.sqlObject = dataObject;
+
         }, function () {
             console.log('Modal dismissed at: ' + $scope.selected);
         });

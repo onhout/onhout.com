@@ -41,15 +41,43 @@ function userName($userName)
 		return false;
 	}
 }
+function checkUserAndPassword($userName, $password)
+{
+	global $mysqli;
+	$column = "userName";
+	$data = $userName;
+	if($userName!=NULL && $password!=NULL){
+
+		$stmt = $mysqli->prepare("SELECT
+		userName,
+		password
+		FROM users
+		WHERE $column = ?
+		LIMIT 1");
+		$stmt->bind_param("s", $data);
+		$stmt->execute();
+		$stmt->bind_result($userNamePlaceHolder, $passwordPlaceHolder);
+		while($stmt->fetch()){
+			$checkUserName = ["user_name"=>$userNamePlaceHolder, "pass"=>$passwordPlaceHolder];
+		}
+		$stmt->close();
+		if ($checkUserName["user_name"]== $userName && $checkUserName["pass"]  == $password){
+			return true;
+		} else{
+			return false;
+		}
+	}
+}
 
 //Retrieve complete user information by username
-function fetchUserDetails($userName=NULL)
+function fetchUserDetails($userName, $password)
 {
-	if($userName!=NULL) {
+
+	if(checkUserAndPassword($userName, $password)==true) {
 		$column = "userName";
 		$data = $userName;
 	}
-	global $mysqli,$db_table_prefix;
+	global $mysqli;
 	$stmt = $mysqli->prepare("SELECT
 		id,
 		userName,
@@ -79,7 +107,8 @@ function fetchUserDetails($userName=NULL)
 	echo $json;
 }
 
-function addUser(){
+function addUser($userData = NULL){
+
     global $mysqli;
     $stmt = $mysqli->prepare("INSERT INTO users (
             userName,
