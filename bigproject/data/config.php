@@ -100,14 +100,22 @@ function fetchUserDetails($userName, $password)
 	$stmt->execute();
 	$stmt->bind_result($id, $userName, $first_name, $last_name, $password, $email, $business_name, $business_address, $business_phone, $website_email, $order_db, $signIn);
 	while ($stmt->fetch()){
-		$row = array('id' => $id, 'user_name' => $userName, 'first_name' => $first_name, 'last_name' => $last_name, 'password' => $password, 'email' => $email, 'business_name' => $business_name, 'business_address' => $business_address, 'business_phone' => $business_phone, 'website_email' => $website_email, 'order_db' => $order_db, 'last_sign_in_stamp' => $signIn);
+		$row = array('id' => $id, 'userName' => $userName, 'first_name' => $first_name, 'last_name' => $last_name, 'password' => $password, 'email' => $email, 'business_name' => $business_name, 'business_address' => $business_address, 'business_phone' => $business_phone, 'website_email' => $website_email, 'order_db' => $order_db, 'last_sign_in_stamp' => $signIn);
 	}
 	$stmt->close();
 	$json = json_encode($row);
 	echo $json;
 }
 
-function addUser($userData = NULL){
+function addUser($userData){
+$daUserName = $userData["userName"];
+$daFirstName = $userData["first_name"];
+$daLastName = $userData["last_name"];
+$daPassword = $userData["password"];
+$daEmail = $userData["email"];
+$daBusinessName = $userData["business_name"];
+$daBusinessAddress = $userData["business_address"];
+$daBusinessPhone = $userData["business_phone"];
 
     global $mysqli;
     $stmt = $mysqli->prepare("INSERT INTO users (
@@ -137,9 +145,9 @@ function addUser($userData = NULL){
             '".time()."'
             )");
 
-        $stmt->bind_param("ssssssss", $this->userName, $this->displayname, $secure_pass, $this->clean_email, $this->activation_token, $this->user_active);
+        $stmt->bind_param("ssssssss", $daUserName, $daFirstName, $daLastName, $daPassword, $daEmail, $daBusinessName, $daBusinessAddress, $daBusinessPhone);
         $stmt->execute();
-        $inserted_id = $mysqli->insert_id;
         $stmt->close();
+        echo json_encode($userData);
 }
 ?>

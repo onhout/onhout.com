@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-animate.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
@@ -27,10 +28,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#/">Home</a>
+                <a class="navbar-brand">Onhout's BP</a>
             </div>
             <div class="collapse navbar-collapse" collapse="navCollapsed">
                 <ul class="nav navbar-nav">
+                    <li><a href="#/">Home</a></li>
                     <li><a href="#/orders">Orders</a></li>
                     <li><a href="#">Reports</a></li>
                     <!--<li class="dropdown" dropdown> <!-- cant believe dropdown and dropdown-toggle became a directive
@@ -47,12 +49,17 @@
                     </li>-->
                 </ul>
                 <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
+                    <div class="input-group" style="width:15em;">
                         <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
                     </div>
-                    <button type="submit" class="btn btn-default">
+                  <!--  <button type="submit" class="btn btn-default">
                         <span class="glyphicon glyphicon-search"></span>
-                    </button>
+                    </button>-->
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown" dropdown>
@@ -63,7 +70,7 @@
                             <li><a ng-click="open()">Log in</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
-                            <li><a ng-click="addAlert()">Add Test Alert</a>
+                            <li><a ng-click="addAlert('success','I didnt break')">Add Test Alert</a>
                             <li class="divider"></li>
                             <li><a href="#">Sign Out</a></li>
                         </ul>

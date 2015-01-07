@@ -9,8 +9,8 @@ navbar.controller('NavbarController', function($scope, $timeout, $modal){
     };*/
     $scope.alerts = [];
 
-    $scope.addAlert = function(type, msg) {
-        $scope.alerts.push({type: type, msg: msg}); //type: success(green) or none(yellow)
+    $scope.addAlert = function(thetype, themsg) {
+        $scope.alerts.push({type: thetype, msg: themsg}); //type: success(green) or none(yellow)
         $timeout(function(){$scope.closeAlert();},3000);
     };
 

@@ -5,10 +5,9 @@ var user = angular.module('usersApp',[]);
 user.controller('userController', function($scope, $http){
     $scope.login= function() {
         console.log("clicked");
-
         var request = $http({
             method: "post",
-            url: "http://onhout.myclassacdl.com/onhout.com/bigproject/data/login.php",
+            url: "http://onhout.myclassacdl.com/bigproject/data/login.php",
             data: {
                 userName: $scope.userName,
                 password: $scope.password
@@ -18,7 +17,7 @@ user.controller('userController', function($scope, $http){
             console.log(data);
             $scope.ok(data);
         });
-        request.error(function(data){
+        request.error(function(){
             $scope.errorMessage = "Please check your logins and try again";
         })
     };
@@ -26,7 +25,7 @@ user.controller('userController', function($scope, $http){
     $scope.register = function(){
       var request = $http({
           method: "post",
-          url: "http://onhout.myclassacdl.com/onhout.com/bigproject/data/register.php",
+          url: "http://onhout.myclassacdl.com/bigproject/data/register.php",
           data: {
               userName: $scope.userName,
               password: $scope.password,
@@ -39,6 +38,7 @@ user.controller('userController', function($scope, $http){
           }
       });
         request.success(function (data){
+            $scope.ok(data);
             console.log("registration success");
         });
         request.error(function(data){
@@ -46,4 +46,3 @@ user.controller('userController', function($scope, $http){
         });
     };
 });
-
