@@ -1,3 +1,32 @@
-<div>
+<div ng-app="orders" ng-controller="ordersPageController">
     <h1>{{message}}</h1>
+    <div>does dataobject still exist?</div>
+    <div>
+        <table>
+            <tr>
+                <td>Username: </td>
+                <td>{{sqlObject.userName}}</td>
+            </tr>
+            <tr>
+                <td>First name: </td>
+                <td>{{sqlObject.first_name}}</td>
+            </tr>
+            <tr>
+                <td>Last name: </td>
+                <td>{{sqlObject.last_name}}</td>
+            </tr>
+            <tr>
+                <td>Business name: </td>
+                <td>{{sqlObject.business_name}}</td>
+            </tr>
+            <tr>
+                <td>Business phone: </td>
+                <td>{{sqlObject.business_phone}}</td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td>{{sqlObject.email}}</td>
+            </tr>
+        </table>
+    </div>
 </div>

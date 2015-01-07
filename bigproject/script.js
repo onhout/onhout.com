@@ -1,7 +1,7 @@
 /**
  * Created by pl on 12/29/2014.
  */
-var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute', 'home', 'usersApp']);
+var navbar = angular.module('Navbar', ['ui.bootstrap', 'ngAnimate', 'ngRoute', 'home', 'usersApp', 'orders']);
 
 navbar.controller('NavbarController', function($scope, $timeout, $modal){
     /*scope.clicked = function(thevalue){

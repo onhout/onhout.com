@@ -44,6 +44,7 @@ function userName($userName)
 function checkUserAndPassword($userName, $password)
 {
 	global $mysqli;
+	$hashedPW = hash('sha512', $password);
 	$column = "userName";
 	$data = $userName;
 	if($userName!=NULL && $password!=NULL){
@@ -61,7 +62,7 @@ function checkUserAndPassword($userName, $password)
 			$checkUserName = ["user_name"=>$userNamePlaceHolder, "pass"=>$passwordPlaceHolder];
 		}
 		$stmt->close();
-		if ($checkUserName["user_name"]== $userName && $checkUserName["pass"]  == $password){
+		if ($checkUserName["user_name"]== $userName && $checkUserName["pass"]  == $hashedPW){
 			return true;
 		} else{
 			return false;
@@ -111,7 +112,7 @@ function addUser($userData){
 $daUserName = $userData["userName"];
 $daFirstName = $userData["first_name"];
 $daLastName = $userData["last_name"];
-$daPassword = $userData["password"];
+$daPassword = hash('sha512', $userData["password"]);
 $daEmail = $userData["email"];
 $daBusinessName = $userData["business_name"];
 $daBusinessAddress = $userData["business_address"];
