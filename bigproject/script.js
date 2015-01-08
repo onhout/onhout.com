@@ -95,12 +95,12 @@ navbar.service('functions', ['menusItem', function(menu){
 navbar.animation('.thealerts',function(){
     return{
         enter: function(element,done){
-            jQuery(element).hide().fadeIn(300);
+            jQuery(element).hide().slideDown(300);
             done;
 
         },
         leave: function(element,done){
-            jQuery(element).fadeOut(600,function(){
+            jQuery(element).slideUp(600,function(){
                 done;
             });
         }

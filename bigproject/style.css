@@ -3,12 +3,6 @@ body{
     font-weight: 300;
 }
 
-.alertcontainer{
-    float:right;
-    width: 320px;
-    padding:10px;
-}
-
 .container-fluid{
     max-width: 1280px;
 }
