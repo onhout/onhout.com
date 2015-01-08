@@ -1,4 +1,4 @@
-<div ng-app="usersApp" ng-controller="userController">
+<div ng-app="usersApp">
     <div class="modal-header">
         <button type="button" class="close" ng-click="cancel()">
             <span class="glyphicon glyphicon-remove"></span>
@@ -7,15 +7,15 @@
         <h4 class="modal-title" ng-show="checked">Register</h4>
     </div>
     <div class="modal-body">
-        <form ng-hide="checked">
-            <div style="color:red">{{errorMessage}}</div>
+        <form ng-hide="checked" ng-controller="logInController" name="login">
+            <div class="error">{{errorMessage}}</div>
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="user" class="form-control" ng-model="userName" id="username" placeholder="Enter your username">
+                <input type="user" class="form-control" ng-model="userName" id="username" required placeholder="Enter your username">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" ng-model="password" id="password" placeholder="Password">
+                <input type="password" class="form-control" ng-model="password" id="password" required placeholder="Password">
             </div>
             <div class="form-group">
                 <div class="checkbox">
@@ -26,42 +26,52 @@
             </div>
             <button type="submit" ng-click="login()" class="btn btn-primary">Submit</button>
         </form>
-        <form ng-show="checked">
+        <form ng-show="checked" name="register" ng-controller="registrationController">
             <div class="form-group">
-                <label for="username">Username</label>
-                <input type="user" class="form-control" ng-model="userName" placeholder="Enter your desired username">
+                <label for="username">Username: </label>
+                <span class="error" ng-show="register.FormUsername.$error.required">(Required)</span>
+                <span class="error" ng-show="register.FormUsername.$error.minlength">Too short</span>
+                <input type="text" class="form-control" ng-model="userName" name="FormUsername" required ng-minlength="3" placeholder="Enter your desired username">
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="text" class="form-control" ng-model="email" id="email" placeholder="Email">
+                <label for="email">Email: </label>
+                <span class="error" ng-show="register.FormEmail.$error.required">(Required)</span>
+                <span class="error" ng-show="register.FormEmail.$error.email">This is not an invalid email</span>
+                <input type="email" class="form-control" ng-model="email" name="FormEmail" required id="email" placeholder="Email">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" ng-model="password" placeholder="Enter your password">
+                <label for="password">Password: </label>
+                <span class="error" ng-show="register.FormPassword.$error.required">(Required)</span>
+                <input type="password" class="form-control" ng-model="password" name="FormPassword" required placeholder="Enter your password">
             </div>
             <div class="form-group">
-                <label for="confirmpassword">Confirm your password</label>
-                <input type="password" class="form-control" ng-model="confirmpass" id="confirmpassword" placeholder="Confirm password">
+                <label for="confirmpassword">Confirm your password:</label>
+                <span class="error" ng-show="register.FormConfirmPW.$error.pwMatch">Password didn't match</span>
+                <input type="password" class="form-control" ng-model="confirmpass" id="confirmpassword" name="FormConfirmPW" placeholder="Confirm password" pw-confirm="password">
             </div>
             <div class="form-group">
-                <label for="firstname">First Name:</label>
-                <input type="text" class="form-control" ng-model="first_name" id="firstname" placeholder="First name">
+                <label for="firstname">First Name: </label>
+                <span class="error" ng-show="register.FormFirstName.$error.required">(Required)</span>
+                <input type="text" class="form-control" ng-model="first_name" id="firstname" name="FormFirstName" required placeholder="First name">
             </div>
             <div class="form-group">
                 <label for="lastname">Last Name:</label>
                 <input type="text" class="form-control" ng-model="last_name" id="lastname" placeholder="Last name">
             </div>
             <div class="form-group">
-                <label for="business_name">Business Name:</label>
-                <input type="text" class="form-control" ng-model="business_name" id="business_name" placeholder="Business name">
+                <label for="business_name">Business Name: </label>
+                <span class="error" ng-show="register.FormBusinessName.$error.required">(Required)</span>
+                <input type="text" class="form-control" ng-model="business_name" id="business_name" name="FormBusinessName" required placeholder="Business name">
             </div>
             <div class="form-group">
-                <label for="business_address">Business Address:</label>
-                <input type="text" class="form-control" ng-model="business_address" id="business_address" placeholder="Business Address">
+                <label for="business_address">Business Address: </label>
+                <span class="error" ng-show="register.FormBusinessAddress.$error.required">(Required)</span>
+                <input type="text" class="form-control" ng-model="business_address" id="business_address" name="FormBusinessAddress" required placeholder="Business Address">
             </div>
             <div class="form-group">
-                <label for="business_phone">Business Phone Number:</label>
-                <input type="text" class="form-control" ng-model="business_phone" id="business_phone" placeholder="Business phone number">
+                <label for="business_phone">Business Phone Number: </label>
+                <span class="error" ng-show="register.FormBusinessPhone.$error.required">(Required)</span>
+                <input type="text" class="form-control" ng-model="business_phone" id="business_phone" name="FormBusinessPhone" required placeholder="Business phone number">
             </div>
             <button type="submit" class="btn btn-primary" ng-click="register()">Sign Up!</button>
         </form>
