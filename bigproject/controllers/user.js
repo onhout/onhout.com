@@ -4,9 +4,19 @@
 var user = angular.module('usersApp',[]);
 user.controller('userController', function($scope, $http){
     var currentUrl = window.location.href;
+    /*$scope.fields=[
+        {placeholder: 'Username', name:'userName', isRequired:true},
+        {placeholder: 'Password', name:'password', isRequired:true},
+        {placeholder: 'Confirm Password', name:'confirmpass', isRequired:true},
+        {placeholder: 'Email', name:'email', isRequired:true},
+        {placeholder: 'First Name', name:'first_name', isRequired:true},
+        {placeholder: 'Last Name', name:'last_name', isRequired:true},
+        {placeholder: 'Business Name', name:'business_name', isRequired:true},
+        {placeholder: 'Business Address', name:'business_address', isRequired:true},
+        {placeholder: 'Business Phone Number', name:'business_phone', isRequired:true}
+    ];*/
     $scope.login= function() {
         console.log("clicked");
-
         var request = $http({
             method: "post",
             url: currentUrl.substring(0, currentUrl.lastIndexOf("index.html")) + "data/login.php",
