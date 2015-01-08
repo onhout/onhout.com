@@ -83,7 +83,8 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-lg-push-4">
+            <div class="col-md-9" ng-view></div> <!--main view-->
+            <div class="col-md-3">
                 <div class="alertcontainer">
                     <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"
                            class="thealerts">
@@ -91,7 +92,6 @@
                     </alert>
                 </div>
             </div>
-            <div class="col-lg-9 col-lg-pull-9 col-md-6" ng-view></div> <!--main view-->
         </div>
         <div ng-template></div> <!--modal view-->
     </div>
