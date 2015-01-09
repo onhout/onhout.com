@@ -36,7 +36,7 @@ user.controller('logInController', function($scope, $http){
 });
 user.controller('registrationController', function($scope, $http){
     var currentUrl = window.location.href;
-    $scope.register = function(){
+    $scope.reg = function(){
         var request = $http({
             method: "post",
             url: currentUrl.substring(0, currentUrl.lastIndexOf("index.html")) + "data/register.php",

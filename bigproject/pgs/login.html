@@ -26,7 +26,7 @@
             </div>
             <button type="submit" class="btn btn-primary" ng-click="login()">Submit</button>
         </form>
-        <form ng-if="checked" name="register" ng-controller="registrationController" ng-submit="register()" novalidate>
+        <form ng-if="checked" name="register" ng-controller="registrationController" ng-submit="reg()" novalidate>
             <div class="form-group">
                 <label for="username">Username: </label>
                 <span class="error" ng-show="register.FormUsername.$error.required">(Required)</span>
