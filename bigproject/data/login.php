@@ -5,3 +5,4 @@ $request =json_decode($postdata);
 @$userName = $request->userName;
 @$password = $request->password;
 fetchUserDetails($userName, $password);
+?>

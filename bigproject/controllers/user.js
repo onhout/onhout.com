@@ -67,8 +67,8 @@ user.directive('pwConfirm', [function(){
         link: function(scope, elem, attrs, ctrl){
             var password = attrs.ngModel;
             var confirmpassword = attrs.pwConfirm;
-            scope.$watch('[password, confirmpassword]', function(value){
-                ctrl.$setValidity('pwMatch', scope[password]===scope[confirmpassword]);
+            scope.$watch(password, function(){
+                ctrl.$setValidity('pwMatch', scope[password]==scope[confirmpassword]);
             });
         }
     }
