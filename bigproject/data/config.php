@@ -18,29 +18,47 @@ private business_phone;*/
     }
 }*/
 //check if user exist in db
-function userName($userName)
+function validateregistration($userName, $email)
 {
-	global $mysqli,$db_table_prefix;
-	$stmt = $mysqli->prepare("SELECT active
-		FROM users
-		WHERE
-		userName = ?
-		LIMIT 1");
-	$stmt->bind_param("s", $userName);
-	$stmt->execute();
-	$stmt->store_result();
-	$num_returns = $stmt->num_rows;
-	$stmt->close();
-
-	if ($num_returns > 0)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
+	global $mysqli;
+	if ($email == null){
+		$stmt = $mysqli->prepare("SELECT
+			userName
+			FROM users
+			WHERE
+			userName = ?
+			LIMIT 1");
+		$stmt->bind_param("s", $userName);
+		$stmt->execute();
+		$stmt->bind_result($userExist);
+		$stmt->fetch();
+		if ($userExist == $userName){
+			echo ("User Exist");
+		} else {
+			echo ("user don't exist");
+		}
+		$stmt->close();
+	} else if ($userName == null){
+		$stmt = $mysqli->prepare("SELECT
+			email
+			FROM users
+			WHERE
+			email = ?
+			LIMIT 1");
+		$stmt->bind_param("s", $email);
+		$stmt->execute();
+		$stmt->bind_result($emailExist);
+		$stmt->fetch();
+		if ($emailExist == $email){
+			echo ("email Exist");
+		} else {
+			echo ("email don't exist");
+		}
+		$stmt->close();
 	}
 }
+
+//check if user && password match
 function checkUserAndPassword($userName, $password)
 {
 	global $mysqli;
@@ -108,6 +126,7 @@ function fetchUserDetails($userName, $password)
 	echo $json;
 }
 
+//add user to database in registration
 function addUser($userData){
 $daUserName = $userData["userName"];
 $daFirstName = $userData["first_name"];
