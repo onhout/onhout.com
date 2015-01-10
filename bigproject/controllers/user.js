@@ -16,7 +16,6 @@ user.controller('logInController', function($scope, $http){
         {placeholder: 'Business Phone Number', name:'business_phone', isRequired:true}
     ];*/
     $scope.login= function() {
-        console.log("clicked");
         var request = $http({
             method: "post",
             url: currentUrl.substring(0, currentUrl.lastIndexOf("index.html")) + "data/login.php",
@@ -74,3 +73,23 @@ user.directive('pwConfirm', [function(){
     }
 }]);
 
+user.directive('checkDatabase', function($http){
+    var UnE;
+    return{
+        require: 'ngModel',
+        link: function(scope, elem, attrs, ctrl){
+            scope.$watch(attrs.ngModel, function(value){
+                if (UnE) clearTimeout(UnE);
+                UnE = setTimeout(function(){
+                    $http({
+                        method:"post",
+                        url: 'data/registervalidate.php',
+                        data: value
+                    }).success(function(data){
+                        ctrl.$setValidity('checkIt', data);
+                    });
+                }, 500);
+            })
+        }
+    }
+})

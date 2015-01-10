@@ -31,23 +31,28 @@
                 <label for="username">Username: </label>
                 <span class="error" ng-show="register.FormUsername.$error.required">(Required)</span>
                 <span class="error" ng-show="register.FormUsername.$error.minlength">Too short</span>
-                <input type="text" class="form-control" ng-model="userName" name="FormUsername" required ng-minlength="3" placeholder="Enter your desired username">
+                <span class="error" ng-show="register.FormUsername.$error.checkIt">Username exist, please choose another one.</span>
+                <input type="text" class="form-control" ng-model="userName" name="FormUsername"
+                       required ng-minlength="5" placeholder="Enter your desired username" check-database>
             </div>
             <div class="form-group">
                 <label for="email">Email: </label>
                 <span class="error" ng-show="register.FormEmail.$error.required">(Required)</span>
                 <span class="error" ng-show="register.FormEmail.$error.email">This is not an invalid email</span>
-                <input type="email" class="form-control" ng-model="email" name="FormEmail" required id="email" placeholder="Email">
+                <span class="error" ng-show="register.FormEmail.$error.checkIt">Email exist, please choose another one.</span>
+                <input type="email" class="form-control" ng-model="email" name="FormEmail" required id="email" placeholder="Email" check-database>
             </div>
             <div class="form-group">
                 <label for="password">Password: </label>
                 <span class="error" ng-show="register.FormPassword.$error.required">(Required)</span>
-                <input type="password" class="form-control" ng-model="password" name="FormPassword" required placeholder="Enter your password">
+                <input type="password" class="form-control" ng-model="password" name="FormPassword"
+                       required placeholder="Enter your password">
             </div>
             <div class="form-group">
                 <label for="confirmpassword">Confirm your password:</label>
                 <span class="error" ng-show="register.FormConfirmPW.$error.pwMatch">Password didn't match</span>
-                <input type="password" class="form-control" ng-model="confirmpass" id="confirmpassword" name="FormConfirmPW" placeholder="Confirm password" pw-confirm="password">
+                <input type="password" class="form-control" ng-model="confirmpass" id="confirmpassword"
+                       name="FormConfirmPW" placeholder="Confirm password" pw-confirm="password">
             </div>
             <div class="form-group">
                 <label for="firstname">First Name: </label>
@@ -73,7 +78,7 @@
                 <span class="error" ng-show="register.FormBusinessPhone.$error.required">(Required)</span>
                 <input type="text" class="form-control" ng-model="business_phone" id="business_phone" name="FormBusinessPhone" required placeholder="Business phone number">
             </div>
-            <button type="submit" class="btn btn-primary">Sign Up!</button>
+            <button type="submit" ng-disabled="register.$invalid" class="btn btn-primary">Sign Up!</button>
         </form>
     </div>
     <div class="modal-footer">

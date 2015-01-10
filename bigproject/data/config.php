@@ -17,44 +17,18 @@ private business_phone;*/
         unset($_SESSION[$name]);
     }
 }*/
-//check if user exist in db
-function validateregistration($userName, $email)
-{
-	global $mysqli;
-	if ($email == null){
-		$stmt = $mysqli->prepare("SELECT
-			userName
-			FROM users
-			WHERE
-			userName = ?
-			LIMIT 1");
-		$stmt->bind_param("s", $userName);
-		$stmt->execute();
-		$stmt->bind_result($userExist);
-		$stmt->fetch();
-		if ($userExist == $userName){
-			echo ("User Exist");
-		} else {
-			echo ("user don't exist");
-		}
-		$stmt->close();
-	} else if ($userName == null){
-		$stmt = $mysqli->prepare("SELECT
-			email
-			FROM users
-			WHERE
-			email = ?
-			LIMIT 1");
-		$stmt->bind_param("s", $email);
-		$stmt->execute();
-		$stmt->bind_result($emailExist);
-		$stmt->fetch();
-		if ($emailExist == $email){
-			echo ("email Exist");
-		} else {
-			echo ("email don't exist");
-		}
-		$stmt->close();
+//check if user or email exist in db
+function validateregistration($userNameOrEmail)
+{	global $mysqli;
+	if (!filter_var($userNameOrEmail, FILTER_VALIDATE_EMAIL)){
+		$result = $mysqli->query("SELECT userName FROM users WHERE userName = '".$userNameOrEmail."' LIMIT 1");
+	} else {
+		$result = $mysqli->query("SELECT email FROM users WHERE email = '".$userNameOrEmail."' LIMIT 1");
+	}
+	if ($result->num_rows >0){
+		echo false;
+	} else {
+		echo true;
 	}
 }
 
