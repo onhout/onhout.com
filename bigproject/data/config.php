@@ -1,22 +1,6 @@
 <?php
 require_once("db_data.php");
-/*//vars
-private userName;
-private first_name;
-private last_name;
-private password;
-private email;
-private business_name;
-private business_address;
-private business_phone;*/
 
-//destroy a session
-/*function destroySession($name){
-    if (isset ($_SESSION[$name]){
-        $_SESSION[$name] = NULL;
-        unset($_SESSION[$name]);
-    }
-}*/
 //check if user or email exist in db
 function validateregistration($userNameOrEmail)
 {	global $mysqli;
@@ -37,28 +21,12 @@ function checkUserAndPassword($userName, $password)
 {
 	global $mysqli;
 	$hashedPW = hash('sha512', $password);
-	$column = "userName";
-	$data = $userName;
-	if($userName!=NULL && $password!=NULL){
-
-		$stmt = $mysqli->prepare("SELECT
-		userName,
-		password
-		FROM users
-		WHERE $column = ?
-		LIMIT 1");
-		$stmt->bind_param("s", $data);
-		$stmt->execute();
-		$stmt->bind_result($userNamePlaceHolder, $passwordPlaceHolder);
-		while($stmt->fetch()){
-			$checkUserName = ["user_name"=>$userNamePlaceHolder, "pass"=>$passwordPlaceHolder];
-		}
-		$stmt->close();
-		if ($checkUserName["user_name"]== $userName && $checkUserName["pass"]  == $hashedPW){
-			return true;
-		} else{
-			return false;
-		}
+	$dbUser = $mysqli->query("SELECT userName FROM users WHERE userName ='".$userName."' LIMIT 1");
+	$dbPass = $mysqli->query("SELECT password FROM users WHERE password ='".$hashedPW."' LIMIT 1");
+	if (($dbUser->num_rows>0) && ($dbPass->num_rows>0)){
+		return true;
+	} else {
+		return false;
 	}
 }
 
