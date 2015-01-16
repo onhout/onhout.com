@@ -71,20 +71,6 @@ navbar.config(function($routeProvider){
         //});
 });
 
-/*navbar.controller('homePageController', function($scope){
-    $scope.message = 'Home';
-});*/
-
-navbar.controller('ordersController', function($scope){
-    $scope.message = 'Orders';
-});
-
-/*navbar.value('menusItem', {
-    homeaction: "Home",
-    orderaction: "Orders",
-    reportaction: "Reports"
-});
-
 navbar.service('functions', ['menusItem', function(menu){
     this.selectfunction = function(actions){
         return menu[actions] + " selected.";
