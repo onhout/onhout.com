@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Google Maps API demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="maps.css">
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbHb455PAsw5mUySCnxtK_KXretllnWFQ"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="maps.js"></script>
+</head>
+<body>
+<div id="map-canvas"></div>
+<div class="controlPanel">
+    <div class="controlContainer">
+        <div class="form-inline">
+            <label for="theDistance">Distance:</label>
+            <input type="text" class="distance form-control" id="theDistance">
+                <div class="radio-inline">
+                    <input type="radio" name="unit" value="mi" id="mi" checked="checked">mi<br>
+                    <input type="radio" name="unit" value="km" id="km">km
+                </div>
+            <button class="btn btn-default" id="GOHOME">GO</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
