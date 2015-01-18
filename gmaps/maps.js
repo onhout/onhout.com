@@ -19,7 +19,8 @@ $(document).ready(function() {
     var controlDiv = $(".controlPanel");
     var controlUI = $("#GOHOME");
     var mapOptions = {
-        zoom: 14
+        zoom: 14,
+        disableDefaultUI:true
     };
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
