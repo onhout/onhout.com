@@ -15,7 +15,7 @@ $(document).ready(function() {
         }
         return circleOption;
     }
-    var initialLocation;
+    var clickedLocation;
     var controlDiv = $(".controlPanel");
     var controlUI = $("#GOHOME");
     var mapOptions = {
@@ -27,22 +27,21 @@ $(document).ready(function() {
     if (navigator.geolocation) {
         var browserSupport = true;
         navigator.geolocation.getCurrentPosition(function (position) {
-            initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-            map.setCenter(initialLocation);
-            $("#mi").click(function(){
-
-            });
+            map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
             controlUI.click(function(){
-                var distanceValue = parseFloat($(".distance").val());
-                if ($("#mi").is(':checked')){
-                    distanceValue = distanceValue * 1609.34;
-                } else if ($("#km").is(':checked')){
-                    distanceValue = distanceValue * 1000;
-                }
-                console.log(distanceValue);
-                var marker = new google.maps.Marker({position:initialLocation, map:map});
-                var circle = new google.maps.Circle(createCircle(distanceValue, initialLocation));
-            })
+                navigator.geolocation.getCurrentPosition(function(pos){
+                    clickedLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+                    console.log(clickedLocation);
+                    var distanceValue = parseFloat($(".distance").val());
+                    if ($("#mi").is(":checked")){
+                        distanceValue = distanceValue * 1609.34;
+                    } else if ($("#km").is(":checked")){
+                        distanceValue = distanceValue * 1000;
+                    }
+                    var marker = new google.maps.Marker({position:clickedLocation, map:map});
+                    var circle = new google.maps.Circle(createCircle(distanceValue, clickedLocation));
+                });
+            });
         }, function () {
             handleNoGeoLocation(browserSupport);
         });
