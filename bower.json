@@ -1,0 +1,21 @@
+{
+  "name": "onhout.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/onhout/onhout.com",
+  "authors": [
+    "Peter Liu <onhout@gmail.com>"
+  ],
+  "description": "bunch of sites",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
