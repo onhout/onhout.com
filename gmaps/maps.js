@@ -53,12 +53,12 @@ $(document).ready(function() {
     function handleNoGeoLocation(errorFlag) {
         if (errorFlag == true) {
             alert("Geolocation Service Failed.");
-            initialLocation = new google.maps.LatLng(60, 105);
+            var fakelocation = new google.maps.LatLng(60, 105);
         } else {
             alert("Let me take you to siberia, because your browser doesn't support geolocation");
-            initialLocation = new google.maps.LatLng(40.69, -73.95);
+            var fakelocation = new google.maps.LatLng(40.69, -73.95);
         }
-        map.setCenter(initialLocation);
+        map.setCenter(fakelocation);
     }
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(controlDiv[0]);
 });
