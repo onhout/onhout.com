@@ -12,9 +12,9 @@ $(document).ready(function() {
             map:map,
             center: center,
             radius: distance
-        }
+        };
         return circleOption;
-    }
+    };
     var clickedLocation;
     var controlDiv = $(".controlPanel");
     var controlUI = $("#GOHOME");
