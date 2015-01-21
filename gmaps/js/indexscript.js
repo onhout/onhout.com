@@ -11,4 +11,8 @@ $(document).ready(function(){
     var scene2 = new ScrollScene({triggerElement: "#trigger2"})
         .setTween(tween2)
         .addTo(controller);
+    var tween3 = new TweenMax.to("#intro", 2, {backgroundPosition: "-40% 0", ease:Linear.easeNone});
+    var scene3 = new ScrollScene({triggerElement: "#intro", duration: 300})
+        .setTween(tween3)
+        .addTo(controller);
 })
