@@ -1,0 +1,22 @@
+#animate1{
+    opacity: 0;
+    position: relative;
+    top:300px;
+    background-color: #d0ff61;
+    height: 400px;
+    padding: 25px;
+}
+
+#animate2{
+    opacity: 0;
+    position: relative;
+    top: 300px;
+    background-color: #ff9270;
+    height: 400px;
+    padding: 25px;
+}
+
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+}

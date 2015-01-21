@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Triangulation</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="css/indexcss.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="col-lg-5">
-        <h1>Triangulation home page</h1>
+
+<div class="container-fluid" style="height: 1000px;">
+    <div style="height: 400px;"><h1>Triangulation</h1></div>
+    <div class = "body">
+        <h3>Triangulation can be a very powerful way to track your location.
+        In normal Wifi tracking situation, a computer determines it's location
+        automatically by continuously sending signals to the Wifi hub to ask the
+        distance between the computer by how strong or weak the current signal is.
+        You know you can also do this to track other people? Same idea. In social
+        apps like Wechat, or Momo, and thousands of apps out there, there are features
+        such as "People Nearby" or "Look around" etc. Usually the exact location of
+        the people that appeared on those social apps are hidden, but they do give off
+        approximate location. Take example such as Wechat:</h3>
     </div>
-    <div class="col-lg-7">
-        <h1>Coming soon</h1>
+    <div id="trigger1">
+        <h1 class="col-lg-6" id="animate1">Well</h1>
+    </div>
+    <div id="trigger2">
+        <h1 class="col-lg-6" id="animate2"><a href="map.html">Here is the map</a></h1>
     </div>
 </div>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="js/indexscript.js"></script>
-<script src="../bower_components/gsap/src/minified/TweenMax.min.js"></script>
+<script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
 <script src="../bower_components/ScrollMagic/js/jquery.scrollmagic.js"></script>
 </body>
 </html>

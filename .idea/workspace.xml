@@ -5,7 +5,265 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff22f910-d172-4273-8749-677e029c4bda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmaps/maps.js" afterPath="$PROJECT_DIR$/gmaps/maps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/apple-touch-icon-precomposed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_arrow_scroll.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_arrow_skip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_bubble.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_bunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_bunny_wink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_fb_preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_floor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_hat_front.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_parallax_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_parallax_shadow_bottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_parallax_shadow_top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_spark1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_spark2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_spark3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_spark4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_spark5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_spark6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_tophat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/demo_wand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_bezier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_bg_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_bg_spacer_h.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_bg_spacer_v.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_bg_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_imagesequence_07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_parallax_bg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_parallax_bg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_parallax_bg3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_parallax_l1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_parallax_l2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/example_parallax_l3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_appliancetec.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_buntspenden.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_flyacts.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_framescollection.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_googlecardboard.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_sebastienlempens.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/img/madewith_tink.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmaps/pics/photo 1.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmaps/pics/photo 2.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmaps/pics/photo 3.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/.nojekyll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/prettify/Apache-License-2.0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/prettify/Apache-License-2.0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/AttrPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/AttrPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/AttrPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/BezierPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/BezierPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/BezierPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/CSSPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/CSSPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/CSSPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/CSSRulePlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/CSSRulePlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/CSSRulePlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/ColorPropsPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/ColorPropsPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/ColorPropsPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/DirectionalRotationPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/DirectionalRotationPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/DirectionalRotationPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/utils/Draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/utils/Draggable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/utils/Draggable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/easing/EasePack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/easing/EasePack.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/easing/EasePack.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/EaselPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/EaselPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/EaselPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/EndArrayPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/EndArrayPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/EndArrayPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/KineticPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/KineticPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/KineticPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/RaphaelPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/RaphaelPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/RaphaelPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/RoundPropsPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/RoundPropsPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/RoundPropsPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/ScrollMagic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/ScrollMagic.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/ScrollScene.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/ScrollToPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/TEMPLATE_Plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/plugins/TextPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/plugins/TextPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/plugins/TextPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/TimelineLite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/TimelineLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/TimelineLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/TimelineMax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/TimelineMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/TimelineMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/TweenLite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/TweenLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/TweenLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/TweenMax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/TweenMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/URI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/URI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/advanced_tweening.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/anchor_link_scrolling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/bezier_path_animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/bootstrap-dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/bootstrap-dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/bootstrap-tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/bootstrap-tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/cascading_pins.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/class.ScrollMagic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/class.ScrollScene.extend.debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/class.ScrollScene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/class_toggles.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/classes.list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/fixtures/container-scroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/container.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/core.ScrollMagic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/custom_actions.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/custom_containers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/debugging.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_examples/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/details.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/example.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/css/examples.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/examples.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/exceptions.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/fires.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_examples/general.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/going_horizontal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/header.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/header.regular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_examples/highlight.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/image_sequence.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmaps/css/indexcss.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/infinite_scrolling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_mobile/iscroll-probe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/additional/vendor/jasmine-jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/uncompressed/jquery.gsap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/greensock/jquery.gsap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/src/minified/jquery.gsap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/jquery.localScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/jquery.localScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/prettify/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/prettify/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_dependent/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/jquery.scrollTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/jquery.scrollTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/jquery.scrollmagic.debug.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/jquery.scrollmagic.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/jquery.scrollmagic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/jquery.scrollmagic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/jquery.sunlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/jquery.sunlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/jsdoc.conf.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/layout.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/mainpage.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/manipulating_tweens.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/members.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/method.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/mobile_advanced.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/mobile_basic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/js/_examples/modernizr.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/multiple_scroll_directions.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/css/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/gsap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/parallax_scrolling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/parallax_sections.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/params.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/styles/prettify-tomorrow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/styles/prettify-tomorrow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/properties.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/publish.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/removing_and_destroying.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/expert/responsive_duration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/returns.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/scene_manipulation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/sections.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/additional/settings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/simple_pinning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/basic/simple_tweening.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/styles/site.cosmo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/styles/site.cosmo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/source.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/spec/spec.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/spec/spec.events.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/spec/spec.events.scene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/tests/spec/spec.scene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/sunlight-plugin.doclinks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/sunlight-plugin.doclinks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/sunlight-plugin.linenumbers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/sunlight-plugin.linenumbers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/sunlight-plugin.menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/sunlight-plugin.menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/styles/sunlight.default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/styles/sunlight.default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/sunlight.javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/sunlight.javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/sunlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/sunlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/examples/advanced/svg_drawing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/sync_info.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/static/scripts/toc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/docs/scripts/toc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/tutorial.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/docs/template/tmpl/type.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ScrollMagic/dev/src/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmaps/index.html" afterPath="$PROJECT_DIR$/gmaps/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmaps/js/indexscript.js" afterPath="$PROJECT_DIR$/gmaps/js/indexscript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmaps/map.html" afterPath="$PROJECT_DIR$/gmaps/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmaps/css/maps.css" afterPath="$PROJECT_DIR$/gmaps/css/maps.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmaps/js/maps.js" afterPath="$PROJECT_DIR$/gmaps/js/maps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="onhout.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,31 +287,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="maps.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmaps/maps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6624204" vertical-offset="0" max-vertical-offset="1278">
-              <caret line="58" column="69" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maps.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmaps/maps.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gmaps/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4074073" vertical-offset="16" max-vertical-offset="630">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="774">
+              <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexscript.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmaps/js/indexscript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#36#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexcss.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmaps/css/indexcss.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -62,8 +325,18 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gmaps/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+            <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="666">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maps.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gmaps/css/maps.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19656786" vertical-offset="0" max-vertical-offset="641">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -113,9 +386,13 @@
         <option value="$PROJECT_DIR$/bigproject/controllers/homeController.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/gmaps/maps.css" />
-        <option value="$PROJECT_DIR$/gmaps/index.html" />
-        <option value="$PROJECT_DIR$/gmaps/map.html" />
         <option value="$PROJECT_DIR$/gmaps/maps.js" />
+        <option value="$PROJECT_DIR$/gmaps/map.html" />
+        <option value="$PROJECT_DIR$/gmaps/js/maps.js" />
+        <option value="$PROJECT_DIR$/gmaps/css/indexcss.css" />
+        <option value="$PROJECT_DIR$/gmaps/js/indexscript.js" />
+        <option value="$PROJECT_DIR$/gmaps/index.html" />
+        <option value="$PROJECT_DIR$/gmaps/css/maps.css" />
       </list>
     </option>
   </component>
@@ -128,9 +405,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -213,7 +490,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3" />
+              <option name="myItemId" value="gmaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onhout.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onhout.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gmaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onhout.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onhout.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onhout.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onhout.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,18 +613,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gmaps/pics" />
       <recent name="D:\Documents\onhout.com\bigproject\pgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gmaps/js" />
+      <recent name="$PROJECT_DIR$/gmaps/css" />
       <recent name="D:\Documents\onhout.com\bigproject\controllers" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
-    <configuration default="false" name="nav.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/onhout.com/bigproject/nav.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="home.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/onhout.com/bigproject/pgs/home.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -314,6 +639,11 @@
       <method />
     </configuration>
     <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/onhout.com/gmaps/index.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="map.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/onhout.com/gmaps/map.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -356,19 +686,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.nav.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.map.html" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.nav.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.map.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
       </list>
     </recent_temporary>
   </component>
@@ -383,10 +713,17 @@
       <option name="number" value="Default" />
       <updated>1419465012938</updated>
     </task>
+    <task id="LOCAL-00001" summary="Best Practices">
+      <created>1421748668472</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1421748668472</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -399,9 +736,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983871" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39791358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39779875" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -425,6 +762,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Best Practices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Best Practices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -443,55 +782,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bigproject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/data/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="391">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/pgs/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/controllers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="493">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/pgs/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="629">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/controllers/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2091">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bigproject/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1632">
@@ -590,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calc/calc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47532895" vertical-offset="102" max-vertical-offset="867">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39144737" vertical-offset="0" max-vertical-offset="608">
@@ -632,20 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2/2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="7" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="952">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bigproject/controllers/ordersController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
@@ -678,20 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2236842" vertical-offset="0" max-vertical-offset="608">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/controllers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86019737" vertical-offset="837" max-vertical-offset="1700">
-          <caret line="80" column="56" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigproject/pgs/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.32161686" vertical-offset="999" max-vertical-offset="1581">
-          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -773,34 +1028,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/calc/calc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64586586" vertical-offset="0" max-vertical-offset="918">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigproject/controllers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4524181" vertical-offset="1024" max-vertical-offset="1800">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigproject/pgs/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029950082" vertical-offset="846" max-vertical-offset="1674">
+          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.11465" vertical-offset="7608" max-vertical-offset="9270">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/js/alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3868954" vertical-offset="1159" max-vertical-offset="1800">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6974523" vertical-offset="2322" max-vertical-offset="41616">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="628">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20965058" vertical-offset="0" max-vertical-offset="1134">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2527301" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmaps/js/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6567863" vertical-offset="0" max-vertical-offset="1548">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmaps/css/indexcss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmaps/js/indexscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gmaps/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4074073" vertical-offset="16" max-vertical-offset="630">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="774">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gmaps/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="666">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmaps/maps.css">
+    <entry file="file://$PROJECT_DIR$/gmaps/css/maps.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmaps/maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6624204" vertical-offset="0" max-vertical-offset="1278">
-          <caret line="58" column="69" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.19656786" vertical-offset="0" max-vertical-offset="641">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
