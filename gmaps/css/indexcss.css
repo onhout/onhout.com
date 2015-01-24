@@ -17,10 +17,24 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
+    background-image: url("../pics/background.jpg");
+}
+
+.body{
+    top:100px;
+    height: 200px;
+    position: relative;
+    margin: 0;
+}
+
+.chaticons {
+    height: 150px;
+    width: 150px;
+}
+
+#toppic{
+    height:100%;
+    width:100%;
 }
