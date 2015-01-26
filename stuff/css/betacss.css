@@ -1,7 +1,6 @@
 html, body{
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
-    font-size: 14px;
     color: ghostwhite;
     background-image: url("../../images/background.jpg");
 }
@@ -30,7 +29,7 @@ div.topjumbo{
     left: 90%;
 }
 
-.container-fluid{
+div#mainbody{
     padding-left: 25px;
     padding-right: 25px;
     overflow: auto;
