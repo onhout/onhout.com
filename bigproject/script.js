@@ -71,7 +71,7 @@ navbar.config(function($routeProvider){
         //});
 });
 
-navbar.service('functions', ['menusItem', function(menu){
+/*navbar.service('functions', ['menusItem', function(menu){
     this.selectfunction = function(actions){
         return menu[actions] + " selected.";
     };

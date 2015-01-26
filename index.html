@@ -1,28 +1,153 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset ="utf-8">
-    <title>Write 100 websites within 100 days</title>
-    <link rel="stylesheet" href="styles.css">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indexes of sites</title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src = "myscript.js"></script>
-    </head>
-    <body id="body" class="firstpage">
-        <ul>
-            <li><a href="about:blank">About</a></li>
-            <li><a href="about:black">More</a></li>
-        </ul>
-        <h1>Write 100 websites in 100 days</h1>
-        <div id="bodyparagraph">
-        <p>I am going to write 100 websites in 100 days. First website I'm going to do is to set up this initial website.</p>
-        <p>I have to make everything nice though. Starting with git stuff.</p>
-        <p id="demo">READY TO GO? Lets go to my first website.</p>
-            <div class="showbutton">
-        <button type="button" id="showbutton" onclick="myfunction()">click me</button>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="stuff/css/betacss.css" rel="stylesheet" type="text/css">
+</head>
+<body style="height: 3000px" id="parallax">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="images/oicon.png" style="height:25px;">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="fa fa-facebook-official"></span> Facebook</a></li>
+                        <li><a href="#"><span class="fa fa-google-plus"></span> Google+</a></li>
+                        <li><a href="#"><span class="fa fa-envelope"></span> E-Mail</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="splashthingy">
+    <div class="splash jumbotron">
+        <div class="topjumbo">
+            <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            <a href="#"><i class="fa fa-envelope fa-2x"></i></a>
+        </div>
+        <h1>WELL</h1>
+
+        <h2>This certainly will become my front page</h2>
+        <br>
+        <a href="#" id="stuffviewer">
+            <h3>Take a look<br>
+                <span style="display: none; cursor: pointer;" class="godown glyphicon glyphicon-chevron-down"></span>
+            </h3></a>
+    </div>
+</div>
+<div class="container-fluid" id="mainbody">
+    <div class="row">
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>Original Car Rental Site</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://cheaplongtermcarrental.myclassacdl.com</h5>
+            </div>
+            <img src="images/page1.png">
+        </div>
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>Cheap Car Rental revamped</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://beta.myclassacdl.com</h5>
+            </div>
+            <img src="images/page2.png">
+        </div>
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>Close CSS/JS study</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://onhout.myclassacdl.com/2/2.html</h5>
+            </div>
+            <img src="images/page3.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>More jQuery/CSS3 examples</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://onhout.myclassacdl.com/3/3.html</h5>
+            </div>
+            <img src="images/page4.png">
+        </div>
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>First AngularJS attempt</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://onhout.myclassacdl.com/4/4.html</h5>
+            </div>
+            <img src="images/page5.png">
+        </div>
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>AngularJS + PHP + MySQL</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://onhout.myclassacdl.com/onhout.com/bigproject/index.html</h5>
+            </div>
+            <img src="images/page6.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 thumbnail">
+            <div class="caption">
+                <h3>ScrollMagic + Google Maps API</h3>
+                <button class="btn btn-primary">Check it out</button>
+                <h5>http://onhout.myclassacdl.com/onhout.com/gmaps</h5>
+            </div>
+            <img src="images/page7.png">
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-picture thumbnail"></div>
+                    <div class="modal-body-text"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Go to page</button>
+                </div>
             </div>
         </div>
-        <div id="trollface">
-        </div>
-        <div id="continue"></div>
-    </body>
+    </div>
+
+</div>
+
+<script src="stuff/js/betajs.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+<script src="bower_components/ScrollMagic/js/jquery.scrollmagic.js"></script>
+</body>
 </html>

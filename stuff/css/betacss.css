@@ -1,0 +1,51 @@
+html, body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: ghostwhite;
+    background-image: url("../../images/background.jpg");
+}
+ul.nav a:hover {
+    text-decoration: underline;
+}
+
+nav.navbar.navbar-default{
+    margin-bottom: 0;
+    background-color: #000811;
+    border: 0 #000811;
+    border-radius: 0;
+}
+div.splash{
+    background-image: url("../../images/splash.jpg");
+    background-size: cover;
+    height: 400px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.topjumbo{
+    display: inline;
+    position:absolute;
+    top: 0;
+    left: 90%;
+}
+
+.container-fluid{
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: auto;
+}
+
+div.caption{
+    display: none;
+    position:absolute;
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    top:0; left:0; right:0; bottom:0;
+}
+
+.modal{
+    color:#000000;
+}
+

@@ -1,0 +1,27 @@
+<div id="p1">This is the first site I've put online for commercial use. It only uses simple LAMP stack and
+Paypal API to process payments. It taught me a lot about PHP, MySQL and Paypal API. It was shut down due
+to the fact that I can no longer get the deals for cheap car rentals.</div>
+
+<div id="p2">Here is the second site that was built shortly before the first site was shut down. This website
+is mainly using JavaScript and CSS, with the help of my friend Wari, this website was quickly drafted up. However,
+before any real implementation was done, it was abandoned because I can not longer receive cheap car rental deals.</div>
+
+<div id="p3">After nearly a year of constant struggle and distraction, I'm finally focusing on studying web development
+back in December. This is the second website I've built, it's simple, it only shows the basic understandings of
+CSS and jQuery.</div>
+
+<div id="p4">Another page demonstrating a more extensive use of jQuery. At this point, I'm pretty comfortable of
+chaining, looping, apply effects to individual items, even while in loop. Some CSS was used. Beginning to learn how to
+write mobile responsive sites. (This is kind of mobile responsive)</div>
+
+<div id="p5">This page is the beginning of getting into AngularJS, demonstrating simple data binding. At this time,
+I've also discovered bootstrap css and bootstrap js and started to put to use.</div>
+
+<div id="p6">More in depth study of AngularJS. Routes, directives, modules, the topic is deep. To start, it's easy, but
+the learning curve is steep once I get my foot wet. I've combined PHP to query a MySQL database in real time using
+AngularJS, using routes to carry the data around the page. Work in Progress.</div>
+
+<div id="p7">Changed a little direction in learning more front-end designs, using ScrollMagic, I can make elements
+animate according to the position of current scroll pixel. The page also demonstrates a very simple triangulation
+technique using Google Maps API. This shows how vulnerable you may be even if only your distance is shown in some
+social apps.</div>
