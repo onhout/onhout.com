@@ -7,7 +7,7 @@ $(document).ready(function(){
     //when it scrolls after the image, reveal it
     $(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop()>350){
+            if ($(this).scrollTop()>340){
                 $(".navbar").fadeIn();
             } else {
                 $(".navbar").fadeOut();
@@ -61,7 +61,33 @@ $(document).ready(function(){
             window.location = passdownToClick;
         });
     });
+    //aboutpage;
+    var popupp = function popup(){
+        $("div.about").slideToggle(200);
+        $("div.splashcontainer").fadeToggle(200);
+    };
+    //about button
+    $("a.aboutbutton").click(popupp);
+    //about on navbar
+    $("#navabout").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".splashthingy").offset().top
+        }, 500, function(){
+            $("div.about").slideDown(200);
+            $("div.splashcontainer").fadeOut(200);
+        });
+    });
+    //portfolio on navbar
+    $("#navportfolio").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#mainbody").offset().top - 50
+        }, 500);
+    });
 
+    $("div.about").click(function(){
+        $("div.about").slideUp(200);
+        $("div.splashcontainer").fadeIn(200);
+    })
 
 });
 
