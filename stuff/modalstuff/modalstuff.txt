@@ -25,5 +25,3 @@ AngularJS, using routes to carry the data around the page. Work in Progress.</di
 animate according to the position of current scroll pixel. The page also demonstrates a very simple triangulation
 technique using Google Maps API. This shows how vulnerable you may be even if only your distance is shown in some
 social apps.</div>
-
-<div id="aboutpage">
