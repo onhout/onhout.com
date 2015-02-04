@@ -68,7 +68,13 @@ $(document).ready(function () {
                 contentString = '<br>' + 'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
                 $("#contentString").append(contentString);
             });
-
+            $.ajax({
+                type:'POST',
+                url:'savecoords.php',
+                success:function(msg){
+                    alert(msg);
+                }
+            })
         }
     });
     /* new google.maps.LatLng(37.6, -122.27),
