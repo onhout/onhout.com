@@ -11,13 +11,32 @@
 <body>
 <div id="map-canvas"></div>
 <div class="container-fluid">
-    <div class="col-sm-5">
-        <input class="form-control" id="address-input" type="text" placeholder="Enter your address">
-        <div id="result"></div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input id="lakeshore" class="dacheck" type="checkbox">Lakeshore area
+                </label>
+                <label>
+                    <input id="minimum" class="dacheck" type="checkbox">$36 minimum area
+                </label>
+                <label>
+                    <input id="other" class="dacheck" type="checkbox">All other area
+                </label>
+            </div>
+            <p><em>If you uncheck without clicking save, all your data will be lost.</em></p>
+            <button class="btn btn-default" id="reloaddata">Reload Data</button>
+            <button class="btn btn-primary" id="savedata">Save Data</button>
+        </div>
     </div>
-    <div class="col-sm-5">
-        <button class="btn btn-default" id="showstrings">Show Coords</button>
+    <div class="col-sm-4">
         <div id="contentString"></div>
+    </div>
+    <div class="col-sm-4">
+        <p class="lead">
+            This page is used to edit the delivery area and save it as a JSON format.
+            All the coordinates saved will be in dependencies/mapjson folder.
+        </p>
     </div>
 </div>
 <!--<script type="text/javascript"
