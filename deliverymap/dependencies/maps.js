@@ -70,7 +70,7 @@ $(document).ready(function () {
             });
             $.ajax({
                 type:'POST',
-                url:'savecoords.php',
+                url:'dependencies/savecoords.php',
                 success:function(msg){
                     alert(msg);
                 }

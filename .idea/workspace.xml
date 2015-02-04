@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff22f910-d172-4273-8749-677e029c4bda" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deliverymap/dependencies/maps.js" afterPath="$PROJECT_DIR$/deliverymap/dependencies/maps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deliverymap/dependencies/savecoords.php" afterPath="$PROJECT_DIR$/deliverymap/dependencies/savecoords.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="onhout.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="maps.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deliverymap/dependencies/maps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="1692">
-              <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.62738854" vertical-offset="902" max-vertical-offset="1692">
+              <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="savecoords.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="savecoords.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliverymap/dependencies/savecoords.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.056162246" vertical-offset="0" max-vertical-offset="641">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -892,18 +890,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliverymap/dependencies/maps.js">
+    <entry file="file://$PROJECT_DIR$/deliverymap/dependencies/savecoords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="1692">
-          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliverymap/dependencies/savecoords.php">
+    <entry file="file://$PROJECT_DIR$/deliverymap/dependencies/maps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056162246" vertical-offset="0" max-vertical-offset="641">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.62738854" vertical-offset="902" max-vertical-offset="1692">
+          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
           <folding />
         </state>
       </provider>
