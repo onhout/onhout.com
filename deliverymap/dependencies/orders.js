@@ -47,7 +47,11 @@ $(document).ready(function(){
         for (var i=0; i<Object.keys(datas).length; i++){
             console.log(polygons[Object.keys(datas)[i]]);
             if (google.maps.geometry.poly.containsLocation(place.geometry.location, polygons[Object.keys(datas)[i]])){
-                $("#result").html("YES ITS INSIDE THE BOUNDARY");
+                if (google.maps.geometry.poly.containsLocation(place.geometry.location, polygons["minimum"])){
+                    $("#results").html("IT CONTAINS INSIDE THE"+Object.keys(datas)[i].toUpperCase()+" BOUNDARY AND MINIMUM");
+                    break;
+                }
+                $("#result").html("YES ITS INSIDE THE "+Object.keys(datas)[i].toUpperCase()+" BOUNDARY");
                 break; //<-Such a main keyword
             } else {
                 $("#result").html("NO ITS NOT INSIDE THE BOUNDARY");
