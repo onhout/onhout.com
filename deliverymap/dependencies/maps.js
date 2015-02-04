@@ -97,26 +97,26 @@ $(document).ready(function () {
 
     var coordbutton = document.getElementById('savedata');
     google.maps.event.addDomListener(coordbutton, 'click', function () {
+        $("#contentString").html('');
         $(".dacheck:checked").each(function(){
             var namespace = $(this).attr("id");
-            $("#contentString").html('');
-            var jsondata = [];
+            datas[namespace] = [];
             var polybounds=shapeLibrary[namespace].getPath().getArray();
             console.log(shapeLibrary[namespace]);
             polybounds.forEach(function (xy, i) {
-                var contentString = '<br>' + 'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
+                var contentString = '<br>' + '<b>' +namespace+ ' </b>'+'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
                 $("#contentString").append(contentString);
                 var temparray = [];
                 temparray.push(xy.lat(), xy.lng());
-                jsondata.push(temparray);
+                datas[namespace].push(temparray);
             });
-            console.log(jsondata);
+            console.log(namespace);
             $.ajax({
                 type: 'POST',
                 url: 'dependencies/savecoords.php',
                 data: {
                     filename: namespace,
-                    json: JSON.stringify(jsondata)
+                    json: JSON.stringify(datas[namespace])
                 }
             })
         });
