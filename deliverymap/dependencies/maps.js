@@ -10,46 +10,71 @@ $(document).ready(function () {
         mapOptions);
 
     //configure the bounds
-    var lakeshorebounds = [];
-    var minumumamountbounds = [];
-    var otherbounds = [];
-    var lakeshoreShape = new google.maps.Polygon({
-        editable: true,
-        strokeColor: '#FF0000',
-        strokeOpacity: 0.8,
-        strokeWeight: 1,
-        fillColor: '#FF0000',
-        fillOpacity: 0.35
-    });
-
-    $("#lakeshore").change(function () {
+    var datas={
+        lakeshore:[],
+        minimum:[],
+        other:[]
+    };
+    var shapeLibrary ={
+        lakeshore: new google.maps.Polygon({
+            editable: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35
+        }),
+        minimum: new google.maps.Polygon({
+            editable: true,
+            strokeColor: '#0000FF',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#0000FF',
+            fillOpacity: 0.35
+        }),
+        other: new google.maps.Polygon({
+            editable: true,
+            strokeColor: '#00FF00',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#00FF00',
+            fillOpacity: 0.35
+        })
+    };
+    //VERY GENERIC FUNCTION HAHAHA
+    $(".dacheck").change(function () {
+        var namespace = $(this).attr('id');
+        console.log(datas[namespace]);
         if ($(this).is(":checked")) {
-            if (lakeshorebounds.length == 0/*check if array is empty*/) {
-                $.get("dependencies/mapjson/lakeshore.json", function (data) {
+            if (datas[namespace].length == 0/*check if array is empty*/) {
+                $.get("dependencies/mapjson/"+namespace+".json", function (data) {
                     for (var i = 0; i < data.length; i++) {
-                        lakeshorebounds.push(new google.maps.LatLng(data[i][0], data[i][1]));
+                        datas[namespace].push(new google.maps.LatLng(data[i][0], data[i][1]));
                         console.log("x: " + data[i][0] + " y: " + data[i][1]);
                     }
-                    console.log(lakeshorebounds);
+                    console.log(datas[namespace]);
                 }).done(function () {
-                    lakeshoreShape.setPath(lakeshorebounds);
+                    shapeLibrary[namespace].setPath(datas[namespace]);
                 });
             }
-            lakeshoreShape.setMap(map);
+            shapeLibrary[namespace].setMap(map);
         } else {
-            lakeshoreShape.setMap(null);
+            shapeLibrary[namespace].setMap(null);
         }
     });
-
+    //RELOAD BECOMES GENERIC
     $("#reloaddata").click(function(){
-        lakeshorebounds = [];
-        $.get("dependencies/mapjson/lakeshore.json", function(data){
-            for (var i=0; i<data.length; i++){
-                lakeshorebounds.push(new google.maps.LatLng(data[i][0], data[i][1]));
-            }
-        }).done(function(){
-            lakeshoreShape.setPath(lakeshorebounds);
-        })
+        $(".dacheck:checked").each(function(){
+            var namespace = $(this).attr("id");
+            datas[namespace] = [];
+            $.get("dependencies/mapjson/"+namespace+".json", function(data){
+                for (var i=0; i<data.length; i++){
+                    datas[namespace].push(new google.maps.LatLng(data[i][0], data[i][1]));
+                }
+            }).done(function(){
+                shapeLibrary[namespace].setPath(datas[namespace]);
+            })
+        });
     });
 
     /*google.maps.event.addDomListener(document.getElementById('loaddata'), 'click', function () {
@@ -72,25 +97,30 @@ $(document).ready(function () {
 
     var coordbutton = document.getElementById('savedata');
     google.maps.event.addDomListener(coordbutton, 'click', function () {
-        $("#contentString").html('');
-        var jsondata = [];
-        var polybounds=lakeshoreShape.getPath().getArray();
-        console.log(lakeshoreShape);
-        polybounds.forEach(function (xy, i) {
-            var contentString = '<br>' + 'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
-            $("#contentString").append(contentString);
-            var temparray = [];
-            temparray.push(xy.lat(), xy.lng());
-            jsondata.push(temparray);
+        $(".dacheck:checked").each(function(){
+            var namespace = $(this).attr("id");
+            $("#contentString").html('');
+            var jsondata = [];
+            var polybounds=shapeLibrary[namespace].getPath().getArray();
+            console.log(shapeLibrary[namespace]);
+            polybounds.forEach(function (xy, i) {
+                var contentString = '<br>' + 'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
+                $("#contentString").append(contentString);
+                var temparray = [];
+                temparray.push(xy.lat(), xy.lng());
+                jsondata.push(temparray);
+            });
+            console.log(jsondata);
+            $.ajax({
+                type: 'POST',
+                url: 'dependencies/savecoords.php',
+                data: {
+                    file: namespace,
+                    json: JSON.stringify(jsondata)
+                }
+            })
         });
-        console.log(jsondata);
-        $.ajax({
-            type: 'POST',
-            url: 'dependencies/savecoords.php',
-            data: {
-                json: JSON.stringify(jsondata)
-            }
-        })
+
     });
 
     /*var showdata = document.getElementById('loaddata');
