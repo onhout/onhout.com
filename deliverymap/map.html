@@ -10,11 +10,19 @@
 </head>
 <body>
 <div id="map-canvas"></div>
-<button class="btn btn-default" id="showstrings">Show Coords</button>
-<div id="contentString"></div>
+<div class="container-fluid">
+    <div class="col-sm-5">
+        <input class="form-control" id="address-input" type="text" placeholder="Enter your address">
+        <div id="result"></div>
+    </div>
+    <div class="col-sm-5">
+        <button class="btn btn-default" id="showstrings">Show Coords</button>
+        <div id="contentString"></div>
+    </div>
+</div>
 <!--<script type="text/javascript"
               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbHb455PAsw5mUySCnxtK_KXretllnWFQ"></script>-->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing,places,geometry"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="dependencies/maps.js"></script>
 

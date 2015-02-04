@@ -4,7 +4,7 @@
 $(document).ready(function () {
     var mapOptions = {
         zoom: 14,
-        center: new google.maps.LatLng(37.765, -122.263)
+        center: new google.maps.LatLng(37.785782, -122.208757)
     };
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -12,6 +12,7 @@ $(document).ready(function () {
 
     var bounds = [];
     var polygonoptions = {
+        draggable: true,
         editable: true,
         strokeWeight:0.8,
         strokeColor: "#0000FF",
@@ -30,7 +31,27 @@ $(document).ready(function () {
         map:map
     });
 
+    var inputbox = document.getElementById('address-input');
+    var autocomplete = new google.maps.places.Autocomplete(inputbox);
+    autocomplete.bindTo('bounds', map);
 
+    google.maps.event.addDomListener(autocomplete, 'place_changed', function(){
+        var place = autocomplete.getPlace();
+        console.log("x: " + place.geometry.location.lat() + " y: " + place.geometry.location.lng());
+        for (var i=0; i<bounds.length; i++){if (google.maps.geometry.poly.containsLocation(place.geometry.location, bounds[i])){
+                $("#result").html("YES ITS INSIDE THE BOUNDARY");
+            } else {
+                $("#result").html("NO ITS NOT INSIDE THE BOUNDARY");
+            }
+        }
+
+        if (place.geometry.viewport){
+            map.fitBounds(place.geometry.viewport);
+        }else {
+            map.setCenter(place.geometry.location);
+            map.setZoom(15);
+        }
+    })
 
     google.maps.event.addDomListener(drawingmanager, 'polygoncomplete', function (thepolygon) {
         bounds.push(thepolygon);
@@ -44,9 +65,10 @@ $(document).ready(function () {
             var contentString = '';
             console.log(polybounds);
             polybounds.forEach(function (xy, i) {
-                var contentString = '<br>' + 'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
+                contentString = '<br>' + 'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
                 $("#contentString").append(contentString);
             });
+
         }
     });
     /* new google.maps.LatLng(37.6, -122.27),
