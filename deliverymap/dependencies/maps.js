@@ -115,7 +115,7 @@ $(document).ready(function () {
                 type: 'POST',
                 url: 'dependencies/savecoords.php',
                 data: {
-                    file: namespace,
+                    filename: namespace,
                     json: JSON.stringify(jsondata)
                 }
             })
