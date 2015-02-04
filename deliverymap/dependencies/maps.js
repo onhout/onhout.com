@@ -71,7 +71,9 @@ $(document).ready(function () {
             $.ajax({
                 type:'POST',
                 url:'dependencies/savecoords.php',
-                data: polybounds
+                data: {
+                    json: JSON.stringify(polybounds)
+                }
             })
         }
     });
