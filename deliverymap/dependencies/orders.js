@@ -50,13 +50,13 @@ $(document).ready(function(){
                 $(".deliverybutton").attr("disabled", false);
                 $(".pickupbutton").attr("disabled", false);
                 if (Object.keys(datas)[i] == "minimum"){
-                    $("#result").html("CHOOSE BETWEEN DELIVERY FROM LAKESHORE ($36 MINIMUM) OR PICKUP FROM OTHER BRANCH");
+                    $("#result").attr("class", "bg-info").html("CHOOSE BETWEEN DELIVERY FROM LAKESHORE ($36 MINIMUM) OR PICKUP FROM OTHER BRANCH");
                 } else {
-                    $("#result").html("CHOOSE BETWEEN DELIVERY FROM " + Object.keys(datas)[i].toUpperCase() + " LOCATION OR PICKUP FROM OTHER BRANCH");
+                    $("#result").attr("class", "bg-success").html("CHOOSE BETWEEN DELIVERY FROM " + Object.keys(datas)[i].toUpperCase() + " LOCATION OR PICKUP FROM OTHER BRANCH");
                 }
                 break; //<-Such a main keyword
             } else {
-                $("#result").html("SORRY YOUR ADDRESS ONLY TAKES PICKUP ORDERS");
+                $("#result").attr("class", "bg-danger").html("SORRY YOUR ADDRESS ONLY TAKES PICKUP ORDERS");
                 $(".pickupbutton").attr("disabled", false);
                 $(".deliverybutton").attr("disabled", true);
             }

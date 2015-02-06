@@ -10,3 +10,13 @@
 .buttonblocks{
     padding-top: 10px;
 }
+
+#result{
+    margin-top: 10px;
+    text-align: center;
+}
+
+html, body{
+    background: url(img/pizza.jpg) no-repeat center fixed;
+    background-size: cover;
+}
