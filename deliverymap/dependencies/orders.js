@@ -47,10 +47,18 @@ $(document).ready(function(){
         for (var i=0; i<Object.keys(datas).length; i++){
             console.log(polygons[Object.keys(datas)[i]]);
             if (google.maps.geometry.poly.containsLocation(place.geometry.location, polygons[Object.keys(datas)[i]])){
-                $("#result").html("YES ITS INSIDE THE "+Object.keys(datas)[i].toUpperCase()+" BOUNDARY");
+                $(".deliverybutton").attr("disabled", false);
+                $(".pickupbutton").attr("disabled", false);
+                if (Object.keys(datas)[i] == "minimum"){
+                    $("#result").html("CHOOSE BETWEEN DELIVERY FROM LAKESHORE ($36 MINIMUM) OR PICKUP FROM OTHER BRANCH");
+                } else {
+                    $("#result").html("CHOOSE BETWEEN DELIVERY FROM " + Object.keys(datas)[i].toUpperCase() + " LOCATION OR PICKUP FROM OTHER BRANCH");
+                }
                 break; //<-Such a main keyword
             } else {
-                $("#result").html("NO ITS NOT INSIDE THE BOUNDARY");
+                $("#result").html("SORRY YOUR ADDRESS ONLY TAKES PICKUP ORDERS");
+                $(".pickupbutton").attr("disabled", false);
+                $(".deliverybutton").attr("disabled", true);
             }
         }
 

@@ -11,11 +11,17 @@
 
 <a href="map.html">Edit Map</a>
 <div class="container-fluid">
-    <input class="form-control" id="address-input" type="text" placeholder="Enter your address">
+    <img class="logo img-responsive" src="dependencies/img/logo.png">
+    <input class="form-control" id="address-input" type="text" placeholder="First enter your address">
+    <div class="buttonblocks">
+        <button class="btn btn-primary btn-lg btn-block pickupbutton" disabled>Pickup</button>
+        <button class="btn btn-danger btn-lg btn-block deliverybutton" disabled>Delivery</button>
+    </div>
     <div id="result"></div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing,places,geometry"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="dependencies/orders.js"></script>
 </body>
 </html>
