@@ -1,43 +1,26 @@
 {
   "saladsticks":{
     "mixedgreen":{
+      "name":"Mixed Greens Salad",
       "desc":"Mixed greens with fresh vegetables, and bread sticks. Choose from our homemade dressings: roasted garlic vinaigrette, honey mustard vinaigrette, ranch, or bleu cheese.",
-      "side":{
-        "price":4.75
-      },
-      "plate":{
-        "price":7.5
-      },
-      "bowl":{
-        "price":16
-      },
-      "party":{
-        "price":35
-      }
+      "side":4.75,
+      "plate":7.5,
+      "bowl":16,
+      "party":35
     },
     "costamesa":{
+      "name":"Costa Mesa Salad",
       "desc":"Warm bacon and mushrooms tossed with mixed greens & vinaigrette and topped with Gorgonzola.",
-      "side":{
-        "price":6.75
-      },
-      "plate":{
-        "price":9.25
-      },
-      "bowl":{
-        "price":22.5
-      }
+      "side":6.75,
+      "plate":9.25,
+      "bowl":22.5
     },
     "lagunaseca":{
+      "name":"Laguna Seca Salad",
       "desc":"Warm chicken and roasted peppers tossed with mixed greens & vinaigrette and topped with feta.",
-      "side":{
-        "price":6.75
-      },
-      "plate":{
-        "price":9.25
-      },
-      "bowl":{
-        "price":22.5
-      }
+      "side":6.75,
+      "plate":9.25,
+      "bowl":22.5
     },
     "garlicbread":{
       "orig":{
@@ -58,112 +41,67 @@
   },
   "eastbayfavorites":{
     "chopper":{
+      "name":"Chopper",
       "desc":"(pepperoni, sausage, salami, bacon, Canadian bacon)",
-      "neopolitan15":{
-        "price":23.5
-      },
-      "neopolitan18":{
-        "price":32
-      },
-      "sicilian":{
-        "price":36
-      }
+      "neopolitan15":23.5,
+      "neopolitan18":32,
+      "sicilian":36
     },
     "garbagepie":{
+      "name":"Garbage Pie",
       "desc":"(pepperoni, sausage, mushroom, onion, olive, spinach, artichoke hearts, fresh tomato)",
-      "neopolitan15":{
-        "price":23.5
-      },
-      "neopolitan18":{
-        "price":32
-      },
-      "sicilian":{
-        "price":36
-      }
+      "neopolitan15":23.5,
+      "neopolitan18":32,
+      "sicilian":36
     },
     "chicane":{
+      "name":"Chicane",
       "desc":"(fresh basil, feta, sun-dried tomato, artichoke hearts)",
-      "neopolitan15":{
-        "price":23
-      },
-      "neopolitan18":{
-        "price":31
-      },
-      "sicilian":{
-        "price":35
-      }
+      "neopolitan15":23,
+      "neopolitan18":31,
+      "sicilian":35
     },
     "heartstopper":{
+      "name":"Heartstopper",
       "desc":"(bacon, gorgonzola, roasted garlic, spinach)",
-      "neopolitan15":{
-        "price":23
-      },
-      "neopolitan18":{
-        "price":31
-      },
-      "sicilian":{
-        "price":35
-      }
+      "neopolitan15":23,
+      "neopolitan18":31,
+      "sicilian":35
     },
     "vegherb":{
+      "name":"Veggie Herbivore",
       "desc":"(spinach, mushroom, onion, olive)",
-      "neopolitan15":{
-        "price":23
-      },
-      "neopolitan18":{
-        "price":31
-      },
-      "sicilian":{
-        "price":35
-      }
+      "neopolitan15":23,
+      "neopolitan18":31,
+      "sicilian":35
     },
     "splitter":{
+      "name":"Splitter",
       "desc":"(roasted chicken breast, roasted peppers, spinach, house four-cheese blend)",
-      "neopolitan15":{
-        "price":23
-      },
-      "neopolitan18":{
-        "price":31
-      },
-      "sicilian":{
-        "price":35
-      }
+      "neopolitan15":23,
+      "neopolitan18":31,
+      "sicilian":35
     },
     "carnivore":{
+      "name":"Carnivore",
       "desc":"(pepperoni, sausage, mushroom, onion)",
-      "neopolitan15":{
-        "price":22.5
-      },
-      "neopolitan18":{
-        "price":30
-      },
-      "sicilian":{
-        "price":34
-      }
+      "neopolitan15":22.5,
+      "neopolitan18":30,
+      "sicilian":34
     },
     "herb":{
+      "name":"Herbivore",
       "desc":"(spinach, mushroom, onion, olive)",
-      "neopolitan15":{
-        "price":22.5
-      },
-      "neopolitan18":{
-        "price":30
-      },
-      "sicilian":{
-        "price":34
-      }
+      "neopolitan15":22.5,
+      "neopolitan18":30,
+      "sicilian":34
     },
     "vegsplitter":{
+      "name":"Veggie Splitter",
       "desc":"(house four-cheese blend, roasted peppers, & spinach)",
-      "neopolitan15":{
-        "price":22.5
-      },
-      "neopolitan18":{
-        "price":30
-      },
-      "sicilian":{
-        "price":34
-      }
+      "neopolitan15":22.5,
+      "neopolitan18":30,
+      "sicilian":34
     }
   }
 }
