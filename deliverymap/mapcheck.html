@@ -1,13 +1,18 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Map Checker for Lakeshore branch</title>
-  <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dependencies/mapcheck.css">
 </head>
 <body>
 <h1>MAP CHECKER FOR LAKESHORE</h1>
 <div id="map-canvas"></div>
-<script src="dependencies/mapcheck.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing,places,geometry"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="dependencies/mapcheck.js"></script>
 </body>
 </html>

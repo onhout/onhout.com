@@ -30,11 +30,11 @@
                 </div>
                 <div class="modal-body">
                     <ul ng-repeat="(category, items) in menu">
-                        <a href="#" id="{{category}}">{{category}}</a>:
+                        {{category}}:
                         <ul ng-repeat="(item, others) in items">
                             {{item}}:
                             <ul ng-repeat="(key, value) in others">
-                                <li>{{key}}: {{value}}</li>
+                                <ul>{{key}}: {{value}}</ul>
                             </ul>
                         </ul>
                     </ul>
