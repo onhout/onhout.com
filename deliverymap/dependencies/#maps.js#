@@ -1,0 +1,103 @@
+/**
+ * Created by pl on 1/17/2015.
+ */
+$(document).ready(function () {
+    var mapOptions = {
+        zoom: 13,
+        center: new google.maps.LatLng(37.810601, -122.2475C184)
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    //configure the bounds
+    var datas={
+        lakeshore:[],
+        minimum:[],
+        other:[]
+    };
+    var shapeLibrary ={
+        lakeshore: new google.maps.Polygon({
+            editable: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35
+        }),
+        minimum: new google.maps.Polygon({
+            editable: true,
+            strokeColor: '#0000FF',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#0000FF',
+            fillOpacity: 0.35
+        }),
+        other: new google.maps.Polygon({
+            editable: true,
+            strokeColor: '#00FF00',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#00FF00',
+            fillOpacity: 0.35
+        })
+    };
+    //VERY GENERIC FUNCTION HAHAHA
+    $(".dacheck").change(function () {
+        var namespace = $(this).attr('id');
+        if ($(this).is(":checked")) {
+            if (datas[namespace].length == 0/*check if array is empty*/) {
+                $.get("dependencies/mapjson/"+namespace+".json", function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        datas[namespace].push(new google.maps.LatLng(data[i][0], data[i][1]));
+                    }
+                }).done(function () {
+                    shapeLibrary[namespace].setPath(datas[namespace]);
+                });
+            }
+            shapeLibrary[namespace].setMap(map);
+        } else {
+            shapeLibrary[namespace].setMap(null);
+        }
+    });
+    //RELOAD BECOMES GENERIC
+    $("#reloaddata").click(function(){
+        $(".dacheck:checked").each(function(){
+            var namespace = $(this).attr("id");
+            datas[namespace] = [];
+            $.get("dependencies/mapjson/"+namespace+".json", function(data){
+                for (var i=0; i<data.length; i++){
+                    datas[namespace].push(new google.maps.LatLng(data[i][0], data[i][1]));
+                }
+            }).done(function(){
+                shapeLibrary[namespace].setPath(datas[namespace]);
+            })
+        });
+    });
+
+    var coordbutton = document.getElementById('savedata');
+    google.maps.event.addDomListener(coordbutton, 'click', function () {
+        $("#contentString").html('');
+        $(".dacheck:checked").each(function(){
+            var namespace = $(this).attr("id");
+            datas[namespace] = [];
+            var polybounds=shapeLibrary[namespace].getPath().getArray();
+            polybounds.forEach(function (xy, i) {
+                var contentString = '<br>' + '<b>' +namespace+ ' </b>'+'Coordinate: ' + i + '<br>' + xy.lat() + ',' + xy.lng();
+                $("#contentString").append(contentString);
+                var temparray = [];
+                temparray.push(xy.lat(), xy.lng());
+                datas[namespace].push(temparray);
+            });
+            $.ajax({
+                type: 'POST',
+                url: 'dependencies/savecoords.php',
+                data: {
+                    filename: namespace,
+                    json: JSON.stringify(datas[namespace])
+                }
+            })
+        });
+
+    });
+});
+

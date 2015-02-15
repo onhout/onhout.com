@@ -5,6 +5,7 @@
   <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<script src="../bower_components/
+<script src="dependencies/
+<script src="../bower_components/jquery/dist/jquery.js"></script>
 </body>
 </html>
