@@ -1,3 +1,13 @@
-html, body, #map-canvas{
+html, body{
     height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#map-canvas{
+    height: 65%;
+}
+
+#address-input{
+    margin: 23px 0 25px 0;
 }
