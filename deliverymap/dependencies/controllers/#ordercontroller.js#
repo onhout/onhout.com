@@ -15,7 +15,3 @@ onlineapp.controller("onlineorder", function($scope, $http){
     });
 
 });
-
-onlineapp.direct("ordeMenu", function($scope){
-
-})

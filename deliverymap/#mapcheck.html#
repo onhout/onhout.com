@@ -1,11 +1,30 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Map Checker for Lakeshore branch</title>
-  <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Map Checker for Lakeshore branch</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dependencies/mapcheck.css">
 </head>
 <body>
-<script src="dependencies/
+<div class="container-fluid">
+    <h1>(ADDRESS )(CHECKER <)(span )(class=")(traveldetails"></)(span></)(h1>
+    <)(div )(class=")(col-)(sm-)(8">
+        <)(input )(class=")(form-()(control" )(onClick=) id="address-input" type="text" placeholder="INPUT YOUR ADDRESS">
+    </div>
+    <div class="col-sm-4">
+        <h1><span class="result"></span></h1>
+    </div>
+</div>
+<div id="map-canvas"></div>
+<div class="container-fluid">
+    <h1>ZIP CODE FOR PERRY: <span class="zipcode"></span></h1>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing,places,geometry"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="dependencies/mapcheck.js"></script>
 </body>
 </html>

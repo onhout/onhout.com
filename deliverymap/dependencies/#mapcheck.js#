@@ -95,6 +95,8 @@ $(document).ready(function(){
                 $(".result").html("NO DELIVER")
             }
         }
-	$("#address-input").focus().select();
+	$("#address-input").focus(function(){
+	    this.select();
+	    })
     })
 });
