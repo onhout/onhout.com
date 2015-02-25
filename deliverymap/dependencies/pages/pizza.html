@@ -1,0 +1,11 @@
+<div ng-app="pizzaController" ng-controller="pizzapagecontoller">
+    <li ng-repeat="(category, items) in pizza">
+        <a href="#" ng-click="expansion(category)">{{category}}</a>
+        <ul ng-repeat="(item, others) in items">
+            {{item}}:
+            <ul ng-repeat="(key, value) in others">
+                <ul>{{key}}: {{value}}</ul>
+            </ul>
+        </ul>
+    </li>
+</div>

@@ -3,7 +3,7 @@
     margin:auto;
     margin-bottom: 25px;
 }
-.container-fluid {
+.beginnerform {
     width:50%;
 }
 
@@ -22,4 +22,17 @@
 html, body{
     background: url(img/pizza.jpg) no-repeat center fixed;
     background-size: cover;
+}
+
+li{
+    list-style-type: none;
+}
+
+.modal-header{
+    padding:0;
+    border-bottom: none;
+}
+
+.navbar{
+    border-radius: 0;
 }

@@ -61,5 +61,14 @@ $(document).ready(function(){
                 $(".deliverybutton").attr("disabled", true);
             }
         }
+    });
+
+    $(".pickupbutton").click(function(){
+        $(this).attr("data-toggle", "modal").attr("data-target", "#myModal");
+    });
+
+    $(".navbar-nav > li").click(function(){
+        $(".navbar-nav > li").attr("class", "none");
+        $(this).attr("class", "active");
     })
 });

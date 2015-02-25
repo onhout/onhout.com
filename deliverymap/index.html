@@ -11,7 +11,7 @@
 
 
 <a href="map.html">Edit Map</a>
-<div class="container-fluid">
+<div class="container-fluid beginnerform">
     <img class="logo img-responsive" src="dependencies/img/logo.png">
     <div class="mainform">
     <input class="form-control" id="address-input" type="text" placeholder="First enter your address">
@@ -22,22 +22,48 @@
     <div id="result"></div>
     <!--modal-->
     <div class="modal fade" id="myModal" ng-app="orderapp" ng-controller="onlineorder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Lanesplitter Menu</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#/pizza">Pizza</a></li>
+                                <li><a href="#/saladsticks">Salads & Sticks</a></li>
+                                <li><a href="#/calzones">Calzones</a></li>
+                                <li><a href="#/lasagnabakes">Lasagna & Bakes</a></li>
+                                <li><a href="#/drinks">Drinks</a></li>
+                                <li><a href="#/extras">Extras</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
                 </div>
                 <div class="modal-body">
-                    <ul ng-repeat="(category, items) in menu">
-                        {{category}}:
-                        <ul ng-repeat="(item, others) in items">
-                            {{item}}:
-                            <ul ng-repeat="(key, value) in others">
-                                <ul>{{key}}: {{value}}</ul>
-                            </ul>
-                        </ul>
-                    </ul>
+
+
+                    <div class="row">
+                        <div class="col-sm-8" ng-view>
+                        </div>
+                        <div class="col-sm-4">
+                            <li id="receipt">
+                                {{orderitems}}
+                            </li>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -52,7 +78,10 @@
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
 <script src="dependencies/controllers/ordercontroller.js"></script>
+<script src="dependencies/controllers/pizzacontroller.js"></script>
+<script src="dependencies/controllers/saladcontroller.js"></script>
 <script src="dependencies/orders.js"></script>
 </body>
 </html>

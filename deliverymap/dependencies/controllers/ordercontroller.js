@@ -1,17 +1,34 @@
 /**
  * Created by pl on 2/12/15.
  */
-var onlineapp = angular.module("orderapp", []);
+var onlineapp = angular.module("orderapp", ['ngRoute', 'pizzaController', 'saladController']);
 
 onlineapp.controller("onlineorder", function($scope, $http){
-    var datastring = "dependencies/data/menu.json";
-    $scope.menu = {};
-    $http.get(datastring).success(function(data, headers, status, config){
-        $scope.menu = data;
-    });
+    $scope.orderitems = "THIS IS THE RECEIPT";
 
-    $(".pickupbutton").click(function(){
-        $(this).attr("data-toggle", "modal").attr("data-target", "#myModal");
-    });
+    $scope.expansion = function(list){
+        console.log(list);
+    }
+});
 
+onlineapp.config(function($routeProvider){
+    $routeProvider
+        .when('/', {
+            templateUrl:'dependencies/pages/pizza.html'
+        })
+        .when('/pizza', {
+            templateUrl:'dependencies/pages/pizza.html'
+            //controller: 'pizzapagecontroller'
+        })
+        .when('/saladsticks', {
+            templateUrl: 'dependencies/pages/saladsticks.html'
+            //controller: 'saladpagecontroller'
+        })
+        .otherwise({
+            redirectedTo: '/'
+        });
+    //.when('/signin', {
+    //    templateUrl: 'pgs/login.html',
+    //    controller: 'popUpController'
+    //});
 });

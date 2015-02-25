@@ -1,45 +1,5 @@
 {
-  "saladsticks":{
-    "mixedgreen":{
-      "name":"Mixed Greens Salad",
-      "desc":"Mixed greens with fresh vegetables, and bread sticks. Choose from our homemade dressings: roasted garlic vinaigrette, honey mustard vinaigrette, ranch, or bleu cheese.",
-      "side":4.75,
-      "plate":7.5,
-      "bowl":16,
-      "party":35
-    },
-    "costamesa":{
-      "name":"Costa Mesa Salad",
-      "desc":"Warm bacon and mushrooms tossed with mixed greens & vinaigrette and topped with Gorgonzola.",
-      "side":6.75,
-      "plate":9.25,
-      "bowl":22.5
-    },
-    "lagunaseca":{
-      "name":"Laguna Seca Salad",
-      "desc":"Warm chicken and roasted peppers tossed with mixed greens & vinaigrette and topped with feta.",
-      "side":6.75,
-      "plate":9.25,
-      "bowl":22.5
-    },
-    "garlicbread":{
-      "orig":{
-        "desc":"With red sauce",
-        "full":4,
-        "half":2
-      },
-      "withsauce":{
-        "desc":"With bleu cheese dressing and red sauce",
-        "full":4.5,
-        "half":2.5
-      },
-      "withcheese":{
-        "desc":"Smothered with melted mozzarella and served with red sauce",
-        "full":5.75
-      }
-    }
-  },
-  "eastbayfavorites":{
+  "East Bay Favorites":{
     "chopper":{
       "name":"Chopper",
       "desc":"(pepperoni, sausage, salami, bacon, Canadian bacon)",
