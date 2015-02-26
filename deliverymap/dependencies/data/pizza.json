@@ -1,67 +1,83 @@
 {
-  "East Bay Favorites":{
     "chopper":{
       "name":"Chopper",
       "desc":"(pepperoni, sausage, salami, bacon, Canadian bacon)",
-      "neopolitan15":23.5,
-      "neopolitan18":32,
-      "sicilian":36
+      "prices": {
+        "15inch": 23.5,
+        "18inch": 32,
+        "sicilian": 36
+      }
     },
     "garbagepie":{
       "name":"Garbage Pie",
       "desc":"(pepperoni, sausage, mushroom, onion, olive, spinach, artichoke hearts, fresh tomato)",
-      "neopolitan15":23.5,
-      "neopolitan18":32,
-      "sicilian":36
+      "prices": {
+        "15inch": 23.5,
+        "18inch": 32,
+        "sicilian": 36
+      }
     },
     "chicane":{
       "name":"Chicane",
       "desc":"(fresh basil, feta, sun-dried tomato, artichoke hearts)",
-      "neopolitan15":23,
-      "neopolitan18":31,
-      "sicilian":35
+      "prices": {
+        "15inch": 23,
+        "18inch": 31,
+        "sicilian": 35
+      }
     },
     "heartstopper":{
       "name":"Heartstopper",
       "desc":"(bacon, gorgonzola, roasted garlic, spinach)",
-      "neopolitan15":23,
-      "neopolitan18":31,
-      "sicilian":35
+      "prices": {
+        "15inch": 23,
+        "18inch": 31,
+        "sicilian": 35
+      }
     },
     "vegherb":{
       "name":"Veggie Herbivore",
       "desc":"(spinach, mushroom, onion, olive)",
-      "neopolitan15":23,
-      "neopolitan18":31,
-      "sicilian":35
+      "prices": {
+        "15inch": 23,
+        "18inch": 31,
+        "sicilian": 35
+      }
     },
     "splitter":{
       "name":"Splitter",
       "desc":"(roasted chicken breast, roasted peppers, spinach, house four-cheese blend)",
-      "neopolitan15":23,
-      "neopolitan18":31,
-      "sicilian":35
+      "prices": {
+        "15inch": 23,
+        "18inch": 31,
+        "sicilian": 35
+      }
     },
     "carnivore":{
       "name":"Carnivore",
       "desc":"(pepperoni, sausage, mushroom, onion)",
-      "neopolitan15":22.5,
-      "neopolitan18":30,
-      "sicilian":34
+      "prices": {
+        "15inch": 22.5,
+        "18inch": 30,
+        "sicilian": 34
+      }
     },
     "herb":{
       "name":"Herbivore",
       "desc":"(spinach, mushroom, onion, olive)",
-      "neopolitan15":22.5,
-      "neopolitan18":30,
-      "sicilian":34
+      "prices": {
+        "15inch": 22.5,
+        "18inch": 30,
+        "sicilian": 34
+      }
     },
     "vegsplitter":{
       "name":"Veggie Splitter",
       "desc":"(house four-cheese blend, roasted peppers, & spinach)",
-      "neopolitan15":22.5,
-      "neopolitan18":30,
-      "sicilian":34
+      "prices": {
+        "15inch": 22.5,
+        "18inch": 30,
+        "sicilian": 34
+      }
     }
-  }
 }

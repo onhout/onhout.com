@@ -35,7 +35,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#">Lanesplitter Menu</a>
+                            <a class="navbar-brand" href="#">Lanesplitter</a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,7 +44,7 @@
                                 <li class="active"><a href="#/pizza">Pizza</a></li>
                                 <li><a href="#/saladsticks">Salads & Sticks</a></li>
                                 <li><a href="#/calzones">Calzones</a></li>
-                                <li><a href="#/lasagnabakes">Lasagna & Bakes</a></li>
+                                <li><a href="#/lasagnabakes">Bakes</a></li>
                                 <li><a href="#/drinks">Drinks</a></li>
                                 <li><a href="#/extras">Extras</a></li>
                             </ul>
@@ -52,16 +52,31 @@
                     </div><!-- /.container-fluid -->
                 </nav>
                 </div>
-                <div class="modal-body">
-
+                <div class="modal-body container-fluid">
 
                     <div class="row">
-                        <div class="col-sm-8" ng-view>
+                        <div class="col-md-8" ng-view>
                         </div>
-                        <div class="col-sm-4">
-                            <li id="receipt">
-                                {{orderitems}}
-                            </li>
+                        <div class="col-md-4">
+                            <div id="receipt">
+                                <h3>Order List</h3>
+                                <table class="table">
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Addons</th>
+                                        <th class="text-right">Price</th>
+                                    </tr>
+                                    <tr ng-repeat="items in orderitems track by $index">
+                                        <td class="receiptitems">{{items.item}}</td>
+                                        <td class="receiptaddons">{{items.addons}}</td>
+                                        <td class="text-right">{{items.price | currency}}</td>
+                                    </tr>
+                                </table>
+                                <h4 class="text-right"><small>+ 9.00% tax and $2.99 delivery charge*</small></h4>
+                                <h1 class="text-right">{{total() | currency}}</h1>
+                                <p class="text-right"><a href="" ng-click="orderitems=[]">reset</a></p>
+                                <button class="btn btn-primary btn-block">checkout</button>
+                            </div>
                         </div>
                     </div>
                 </div>

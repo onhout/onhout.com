@@ -1,11 +1,13 @@
-<div ng-app="pizzaController" ng-controller="pizzapagecontoller">
-    <li ng-repeat="(category, items) in pizza">
-        <a href="#" ng-click="expansion(category)">{{category}}</a>
-        <ul ng-repeat="(item, others) in items">
-            {{item}}:
-            <ul ng-repeat="(key, value) in others">
-                <ul>{{key}}: {{value}}</ul>
-            </ul>
-        </ul>
-    </li>
+<div ng-controller="pizzapagecontroller">
+    <div ng-repeat="(category, items) in pizza" class="{{category}}">
+        <a href="" ng-click="additem(items.name, items.desc, 'sdd')">{{items.name}}:</a>
+        <br>{{items.desc}}:<br>
+            <div class="radio" ng-repeat="(item, price) in items.prices">
+                <label>
+                    <input type="radio" name="selectsize" ng-click="selectsize(item, price)" >
+                    {{item}} - {{price | currency}}
+                </label>
+            </div>
+        <button class="btn btn-default" ng-click="additem(items.name, item, price)">Add</button>
+    </div>
 </div>

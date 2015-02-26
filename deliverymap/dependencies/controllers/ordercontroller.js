@@ -1,14 +1,25 @@
 /**
  * Created by pl on 2/12/15.
  */
-var onlineapp = angular.module("orderapp", ['ngRoute', 'pizzaController', 'saladController']);
+var onlineapp = angular.module("orderapp", ['ngRoute']);
 
-onlineapp.controller("onlineorder", function($scope, $http){
-    $scope.orderitems = "THIS IS THE RECEIPT";
+onlineapp.controller("onlineorder", function($scope){
+    $scope.orderitems=[];
+    $scope.additem = function(name, addons, price){
+        $scope.orderitems.push({"item":name, "addons":addons, "price":price});
+        console.log($scope.orderitems);
+    };
 
-    $scope.expansion = function(list){
-        console.log(list);
+    $scope.total = function(){
+        var totalprice = 0;
+        for(var i =0; i < $scope.orderitems.length; i++){
+            totalprice = totalprice + $scope.orderitems[i].price;
+        }
+        return (totalprice * 1.09 + 2.99).toFixed(2);
     }
+});
+
+onlineapp.service("changestuff", function($http, $scope){
 });
 
 onlineapp.config(function($routeProvider){

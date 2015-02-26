@@ -1,8 +1,9 @@
-<div ng-app="saladController" ng-controller="saladpagecontroller">
+<div ng-controller="saladpagecontroller">
     <li ng-repeat="(category, items) in saladsticks">
-        {{category}}
+        <a ng-click="expansion(items.name)">{{items.name}}:</a>
+        <br>{{items.desc}}
         <ul ng-repeat="(item, others) in items">
-            <a ng-click="expansion(others)">{{item}}</a>:{{others}}
+            {{item}}:{{others}}
         </ul>
     </li>
 </div>
